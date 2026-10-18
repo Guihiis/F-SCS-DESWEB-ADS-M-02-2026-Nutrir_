@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EcoVocação: ONG que combate a fome, reaproveita alimentos e ajuda pessoas em situação de vulnerabilidade a se reerguerem com capacitação e emprego.">
+    <title>EcoVocação | Alimento, dignidade e oportunidade</title>
+    <link rel="stylesheet" href="./stile_css/style-index.css">
+    <script src="./javs_js/index.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="cabecalho">
+        <div class="cabecalho-interno">
+            <a href="index.html" class="logo-container" aria-label="EcoVocação, página inicial">
+                <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <circle cx="24" cy="24" r="22" fill="#2E7D4F"/>
+                    <path d="M14 30c0-9 6-15 18-16-1 11-7 17-16 17-1 0-2 0-2-1z" fill="#F4A340"/>
+                    <path d="M14 33c5-6 9-9 15-12" stroke="#FBF6EC" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-texto">Eco<span>Vocação</span></span>
+            </a>
+
+            <button type="button" class="menu-botao" id="menuBotao" aria-expanded="false" aria-controls="menuPrincipal">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                <span class="sr-only">Abrir menu</span>
+            </button>
+
+            <nav class="menu" id="menuPrincipal" aria-label="Principal">
+                <ul class="links">
+                    <li><a href="#quem-somos">Quem somos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+                <form class="busca" id="busca" role="search">
+                    <label for="campoBusca" class="sr-only">Pesquisar no site</label>
+                    <input type="search" id="campoBusca" placeholder="Pesquisar...">
+                    <button type="submit" id="botaoBusca" aria-expanded="false" aria-label="Pesquisar">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </form>
+
+                <div class="identificacao">
+                    <a href="#contato" class="btn-menu btn-menu-contorno">Preciso de ajuda</a>
+                    <a href="#doe" class="btn-menu btn-menu-cheio">Doe agora</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="titulo-hero">
+            <div class="hero-texto">
+                <span class="selo">ONG de alimentação e reinserção social</span>
+                <h1 id="titulo-hero">EcoVocação</h1>
+                <p class="hero-destaque">Alimento hoje, <span>vocação</span> para o futuro.</p>
+                <p class="hero-paragrafo">
+                    Mais de 50 mil refeições servidas e centenas de recomeços. Começamos com um prato de comida
+                    e vamos além: reaproveitamos alimentos, capacitamos pessoas e conectamos cada uma a uma
+                    oportunidade de trabalho. Seja um doador: transforme vidas e gere oportunidades!
+                </p>
+                <div class="botoes">
+                    <a href="#quem-somos" class="btn btn-secundario">
+                        <ion-icon name="play-outline" aria-hidden="true"></ion-icon> Saiba mais sobre nós
+                    </a>
+                    <a href="#doe" class="btn btn-principal">
+                        <ion-icon name="heart" aria-hidden="true"></ion-icon> Doe agora
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <svg viewBox="0 0 400 320" role="img" aria-labelledby="hero-svg-titulo hero-svg-desc">
+                    <title id="hero-svg-titulo">Ilustração de uma tigela de comida com folhas</title>
+                    <desc id="hero-svg-desc">Uma tigela cheia de alimentos coloridos, com folhas verdes crescendo ao redor, representando alimento e sustentabilidade.</desc>
+                    <circle cx="200" cy="160" r="140" fill="#1E5A3C"/>
+                    <path d="M90 170h220c0 50-45 90-110 90S90 220 90 170z" fill="#F4A340"/>
+                    <path d="M90 170h220" stroke="#FBF6EC" stroke-width="6" stroke-linecap="round"/>
+                    <circle cx="150" cy="150" r="26" fill="#E5533D"/>
+                    <circle cx="205" cy="140" r="30" fill="#7BC47F"/>
+                    <circle cx="255" cy="152" r="24" fill="#FBF6EC"/>
+                    <path d="M200 110c-10-35-35-55-70-55 0 35 25 58 70 55z" fill="#7BC47F"/>
+                    <path d="M205 110c10-40 40-60 80-58-2 40-30 62-80 58z" fill="#2E7D4F"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- QUEM SOMOS -->
+        <section class="secao quem-somos" id="quem-somos" aria-labelledby="titulo-quem-somos">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Quem somos</span>
+                <h2 id="titulo-quem-somos">Uma ONG que alimenta e <span>reconstrói caminhos</span></h2>
+            </div>
+
+            <div class="quem-somos-grade">
+                <div class="quem-somos-texto">
+                    <p>
+                        A EcoVocação acolhe pessoas em situação de vulnerabilidade social oferecendo
+                        refeições diárias e, a partir delas, cursos de capacitação e acesso ao mercado de trabalho.
+                        Toda a comida vem de doações e do combate ao desperdício, unindo sustentabilidade e impacto social.
+                    </p>
+                    <p>
+                        Pessoas com deficiência são nosso público prioritário: cada atividade é pensada para ser acessível.
+                        Hoje, parte da nossa equipe é formada por pessoas que já foram atendidas pela própria ONG.
+                    </p>
+                </div>
+
+                <div class="mvv">
+                    <article class="mvv-item">
+                        <h3>Nossa missão</h3>
+                        <p>Garantir alimentação digna e abrir caminhos de capacitação e trabalho para pessoas em vulnerabilidade, combatendo o desperdício de alimentos.</p>
+                    </article>
+                    <article class="mvv-item">
+                        <h3>Visão</h3>
+                        <p>Construir uma rede em que ninguém passe fome e todos possam viver da sua vocação, com respeito ao meio ambiente.</p>
+                    </article>
+                </div>
+            </div>
+
+            <h3 class="subtitulo">Nossos valores</h3>
+            <ul class="valores">
+                <li>Dignidade em primeiro lugar</li>
+                <li>Sustentabilidade em cada escolha</li>
+                <li>Inclusão de pessoas com deficiência</li>
+                <li>Transparência com doadores e parceiros</li>
+                <li>Cooperação e economia solidária</li>
+                <li>Escuta atenta a cada história</li>
+            </ul>
+        </section>
+
+        <!-- CICLO (metodologia) -->
+        <section class="secao ciclo" id="como-funciona" aria-labelledby="titulo-ciclo">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Nossa metodologia</span>
+                <h2 id="titulo-ciclo">Do prato de comida à <span>nova profissão</span></h2>
+                <p>Nosso trabalho acontece em quatro passos que se alimentam uns aos outros.</p>
+            </div>
+
+            <ol class="cards">
+                <li class="card">
+                    <ion-icon name="restaurant" aria-hidden="true"></ion-icon>
+                    <h3>1. Acolher</h3>
+                    <p>Refeições e cestas básicas para quem precisa de comida agora, sem burocracia.</p>
+                </li>
+                <li class="card">
+                    <ion-icon name="leaf" aria-hidden="true"></ion-icon>
+                    <h3>2. Reaproveitar</h3>
+                    <p>Alimentos doados e hortas comunitárias evitam o desperdício e cuidam do planeta.</p>
+                </li>
+                <li class="card">
+                    <ion-icon name="school" aria-hidden="true"></ion-icon>
+                    <h3>3. Capacitar</h3>
+                    <p>Cursos de cozinha, panificação, horta urbana e reciclagem para aprender uma profissão.</p>
+                </li>
+                <li class="card">
+                    <ion-icon name="briefcase" aria-hidden="true"></ion-icon>
+                    <h3>4. Reinserir</h3>
+                    <p>Conexão com empresas parceiras e com a economia solidária para voltar ao mercado.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- CITAÇÃO -->
+        <section class="citacao" aria-label="Depoimento da fundadora">
+            <figure>
+                <blockquote>
+                    <p>Quem recebe um prato hoje pode servir o prato de amanhã.</p>
+                </blockquote>
+                <figcaption>Samuel de Menezes Nabarrete - O maioral</figcaption>
+            </figure>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="secao projetos" id="projetos" aria-labelledby="titulo-projetos">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Projetos</span>
+                <h2 id="titulo-projetos">Projetos que <span>transformam vidas</span></h2>
+                <p>Podemos mudar o mundo começando pelo prato. Confira o que cada projeto faz.</p>
+            </div>
+
+            <div class="projetos-grade">
+                <article class="projeto">
+                    <span class="tag">Alimentação</span>
+                    <h3>Cozinha Solidária</h3>
+                    <p>Refeições nutritivas preparadas todos os dias com alimentos que seriam desperdiçados.</p>
+                </article>
+                <article class="projeto">
+                    <span class="tag">Meio ambiente</span>
+                    <h3>Horta Comunitária</h3>
+                    <p>Cultivo coletivo que gera alimento, renda e educação ambiental para a comunidade.</p>
+                </article>
+                <article class="projeto">
+                    <span class="tag">Reaproveitamento</span>
+                    <h3>Banco de Alimentos</h3>
+                    <p>Coleta de alimentos em mercados e feiras, com triagem e distribuição segura.</p>
+                </article>
+                <article class="projeto">
+                    <span class="tag">Mundo do trabalho</span>
+                    <h3>Panificação Solidária</h3>
+                    <p>Oficina de panificação que forma padeiros e abre portas no mercado de trabalho.</p>
+                </article>
+                <article class="projeto">
+                    <span class="tag">Inclusão</span>
+                    <h3>Emprega+ PCD</h3>
+                    <p>Preparo e encaminhamento de pessoas com deficiência para vagas em empresas parceiras.</p>
+                </article>
+                <article class="projeto">
+                    <span class="tag">Economia solidária</span>
+                    <h3>Marmita Solidária</h3>
+                    <p>Venda de marmitas por cooperados, com a renda dividida entre quem produz e a ONG.</p>
+                </article>
+            </div>
+
+            <p class="ver-todos"><a href="projetos.html" class="link-seta">Ver todos os projetos <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a></p>
+        </section>
+
+        <!-- IMPACTO -->
+        <section class="impacto" id="impacto" aria-labelledby="titulo-impacto">
+            <div class="impacto-texto">
+                <span class="rotulo">Nosso impacto</span>
+                <h2 id="titulo-impacto">Cada número é uma <span>história de recomeço</span></h2>
+                <p>
+                    Acompanhamos de perto cada pessoa atendida para garantir que a ajuda
+                    de hoje se transforme em autonomia amanhã.
+                </p>
+                <a href="impacto.html" class="link-seta">Ver dados completos <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+            </div>
+
+            <ul class="estatisticas">
+                <li class="estatistica">
+                    <ion-icon name="restaurant-outline" aria-hidden="true"></ion-icon>
+                    <div>
+                        <strong>+50 mil</strong>
+                        <span>refeições servidas</span>
+                    </div>
+                </li>
+                <li class="estatistica">
+                    <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                    <div>
+                        <strong>+1.200</strong>
+                        <span>famílias atendidas</span>
+                    </div>
+                </li>
+                <li class="estatistica">
+                    <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+                    <div>
+                        <strong>+300</strong>
+                        <span>pessoas empregadas</span>
+                    </div>
+                </li>
+            </ul>
+            <p class="nota-dados">Dados fictícios, criados para fins acadêmicos.</p>
+        </section>
+
+        <!-- PARCEIROS -->
+        <section class="secao parceiros" id="parceiros" aria-labelledby="titulo-parceiros">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Parceiros</span>
+                <h2 id="titulo-parceiros">Nossos parceiros e <span>apoiadores</span></h2>
+            </div>
+
+            <div class="parceiros-grade">
+                <div class="parceiro-grupo">
+                    <h3>Parceria institucional</h3>
+                    <ul>
+                        <li>Instituto Futuro Verde</li>
+                        <li>Cooperativa Raízes</li>
+                    </ul>
+                </div>
+                <div class="parceiro-grupo">
+                    <h3>Empresas apoiadoras</h3>
+                    <ul>
+                        <li>Mercado Bom Prato</li>
+                        <li>Padaria Pão Nosso</li>
+                        <li>Horta Viva Atacado</li>
+                    </ul>
+                </div>
+                <div class="parceiro-grupo">
+                    <h3>Empregadores parceiros</h3>
+                    <ul>
+                        <li>Restaurante Sabor da Terra</li>
+                        <li>Logística Caminho Certo</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="nota-dados centro">Nomes fictícios, criados para fins acadêmicos.</p>
+        </section>
+
+        <!-- DOAÇÃO -->
+        <section class="doe" id="doe" aria-labelledby="titulo-doe">
+            <div class="secao-cabecalho">
+                <h2 id="titulo-doe">Seja um agente de <span>transformação</span></h2>
+                <p>Você pode apoiar a EcoVocação de várias formas. Ajude a manter o prato cheio e as portas abertas!</p>
+            </div>
+
+            <div class="doe-grade">
+                <article class="doe-card">
+                    <ion-icon name="calendar" aria-hidden="true"></ion-icon>
+                    <h3>Doação mensal</h3>
+                    <p>Uma contribuição recorrente garante refeições e cursos o ano inteiro.</p>
+                </article>
+                <article class="doe-card">
+                    <ion-icon name="gift" aria-hidden="true"></ion-icon>
+                    <h3>Doação avulsa</h3>
+                    <p>Contribua uma vez, no valor que puder, por cartão, boleto ou PIX.</p>
+                </article>
+                <article class="doe-card">
+                    <ion-icon name="basket" aria-hidden="true"></ion-icon>
+                    <h3>Alimentos e voluntariado</h3>
+                    <p>Doe alimentos não perecíveis ou ofereça seu tempo na cozinha e nas oficinas.</p>
+                </article>
+            </div>
+
+            <div class="doe-acao">
+                <a href="contato.html#doar" class="btn btn-principal">Clique para doar agora</a>
+                <p class="pix">Se preferir, doe via PIX: <strong>contato@ecovocacao.example</strong> / CNPJ 00.000.000/0001-00 (fictício)</p>
+            </div>
+        </section>
+
+        <!-- NOTÍCIAS -->
+        <section class="secao noticias" id="noticias" aria-labelledby="titulo-noticias">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Notícias</span>
+                <h2 id="titulo-noticias">Notícias da <span>EcoVocação</span></h2>
+                <p>Fique por dentro de tudo que está acontecendo por aqui.</p>
+            </div>
+
+            <div class="noticias-grade">
+                <article class="noticia">
+                    <span class="tag">Conquista</span>
+                    <h3><a href="noticias.html">Cozinha Solidária chega a 50 mil refeições servidas</a></h3>
+                    <p><time datetime="2026-09-12">12 de setembro de 2026</time></p>
+                </article>
+                <article class="noticia">
+                    <span class="tag">Sustentabilidade</span>
+                    <h3><a href="noticias.html">Nova horta comunitária reaproveita espaço ocioso do bairro</a></h3>
+                    <p><time datetime="2026-08-20">20 de agosto de 2026</time></p>
+                </article>
+                <article class="noticia">
+                    <span class="tag">Empregabilidade</span>
+                    <h3><a href="noticias.html">Primeira turma de panificação é contratada por empresas parceiras</a></h3>
+                    <p><time datetime="2026-07-05">5 de julho de 2026</time></p>
+                </article>
+            </div>
+
+            <p class="ver-todos"><a href="noticias.html" class="link-seta">Ver todas as notícias <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a></p>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="contato" id="contato" aria-labelledby="titulo-contato">
+            <div class="contato-grade">
+                <div class="contato-info">
+                    <span class="rotulo">Gostaria de saber mais?</span>
+                    <h2 id="titulo-contato">Fale <span>conosco!</span></h2>
+                    <ul class="contato-lista">
+                        <li><ion-icon name="mail-outline" aria-hidden="true"></ion-icon> contato@ecovocacao.example</li>
+                        <li><ion-icon name="call-outline" aria-hidden="true"></ion-icon> (11) 0000-0000</li>
+                        <li><ion-icon name="location-outline" aria-hidden="true"></ion-icon> Rua das Flores, 100, São Caetano do Sul, SP</li>
+                    </ul>
+                    <p class="nota-dados">Dados de contato fictícios.</p>
+                </div>
+
+                <form class="formulario" id="formContato" novalidate>
+                    <div class="campo">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" required autocomplete="name">
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione</option>
+                            <option value="ajuda">Preciso de ajuda</option>
+                            <option value="doacao">Quero doar</option>
+                            <option value="voluntariado">Quero ser voluntário</option>
+                            <option value="parceria">Parceria para empresas</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <div class="campo campo-check">
+                        <input type="checkbox" id="lgpd" name="lgpd" required>
+                        <label for="lgpd">Concordo com o uso dos meus dados para retorno do contato, conforme a LGPD.</label>
+                    </div>
+                    <button type="submit" class="btn btn-principal">Enviar mensagem</button>
+                    <p class="status-form" id="statusForm" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-grade">
+            <div>
+                <p class="rodape-titulo">EcoVocação</p>
+                <p>Plataforma de Sustentabilidade, Empregabilidade e Impacto Social.</p>
+                <ul class="redes">
+                    <li><a href="#" aria-label="Instagram da EcoVocação"><ion-icon name="logo-instagram" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="Facebook da EcoVocação"><ion-icon name="logo-facebook" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="YouTube da EcoVocação"><ion-icon name="logo-youtube" aria-hidden="true"></ion-icon></a></li>
+                </ul>
+            </div>
+
+            <nav aria-label="Rodapé">
+                <p class="rodape-titulo">Navegue</p>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="Mais páginas">
+                <p class="rodape-titulo">Conteúdo</p>
+                <ul>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="midia.html">Mídia</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <p class="rodape-copy">&copy; <span id="ano">2026</span> EcoVocação. Projeto acadêmico, Fatec São Caetano do Sul. CNPJ fictício 00.000.000/0001-00. <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+    <div class="cookies" id="cookies" role="dialog" aria-labelledby="cookies-texto" hidden>
+        <p id="cookies-texto">Usamos cookies para melhorar sua experiência e entender como o site é usado, em conformidade com a LGPD.</p>
+        <button type="button" class="btn btn-principal" id="cookiesAceitar">Aceitar e fechar</button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
