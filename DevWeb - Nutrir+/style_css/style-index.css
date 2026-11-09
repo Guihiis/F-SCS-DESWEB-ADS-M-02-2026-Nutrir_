@@ -770,7 +770,6 @@ h2 span {
     color: #B3261E;
 }
 
-/* 16. Rodapé e cookies */
 .rodape {
     padding: 40px 20px 20px;
     background-color: var(--verde-escuro);
@@ -906,7 +905,6 @@ h2 span {
         padding: 6px 0;
     }
 
-    /* Busca animada no desktop (igual ao Cyntax) */
     .busca {
         margin: 0;
         gap: 0;

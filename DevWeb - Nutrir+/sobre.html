@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a história, a missão, a visão, os valores e a equipe da Nutrir+, ONG que combate a fome, reaproveita alimentos e abre caminhos de trabalho.">
+    <title>Sobre | Nutrir+</title>
+    <link rel="stylesheet" href="./style_css/sobre.css">
+    <script src="./javs_js/index.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="cabecalho">
+        <div class="cabecalho-interno">
+            <a href="index.html" class="logo-container" aria-label="EcoVocação, página inicial">
+                <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <circle cx="24" cy="24" r="22" fill="#2E7D4F"/>
+                    <path d="M14 30c0-9 6-15 18-16-1 11-7 17-16 17-1 0-2 0-2-1z" fill="#F4A340"/>
+                    <path d="M14 33c5-6 9-9 15-12" stroke="#FBF6EC" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-texto">Nutrir<span>+</span></span>
+            </a>
+
+            <button type="button" class="menu-botao" id="menuBotao" aria-expanded="false" aria-controls="menuPrincipal">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                <span class="sr-only">Abrir menu</span>
+            </button>
+
+            <nav class="menu" id="menuPrincipal" aria-label="Principal">
+                <ul class="links">
+                    <li><a href="index.html#quem-somos">Quem somos</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="index.html#impacto">Impacto</a></li>
+                    <li><a href="index.html#noticias">Notícias</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+
+                <form class="busca" id="busca" role="search">
+                    <label for="campoBusca" class="sr-only">Pesquisar no site</label>
+                    <input type="search" id="campoBusca" placeholder="Pesquisar...">
+                    <button type="submit" id="botaoBusca" aria-expanded="false" aria-label="Pesquisar">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </form>
+
+                <div class="identificacao">
+                    <a href="index.html#contato" class="btn-menu btn-menu-contorno">Preciso de ajuda</a>
+                    <a href="index.html#doe" class="btn-menu btn-menu-cheio">Doe agora</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <div class="titulo-pagina">
+            <h1>Sobre a Nutrir+</h1>
+            <p>Uma ONG que começa com um prato de comida e vai além: reaproveita alimentos, capacita pessoas e abre portas no mercado de trabalho.</p>
+        </div>
+
+        <section class="secao historia" id="historia" aria-labelledby="titulo-historia">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Nossa história</span>
+                <h2 id="titulo-historia">De uma panela coletiva a uma <span>rede de recomeços</span></h2>
+                <p>Cada passo nasceu de uma necessidade real da comunidade.</p>
+            </div>
+
+            <div class="historia-grade">
+                <div class="historia-texto">
+                    <p>
+                        A Nutrir+ nasceu da vontade de um grupo de voluntários de São Caetano do Sul que percebeu um
+                        contraste difícil de ignorar: de um lado, mercados e feiras descartando alimentos próprios para o consumo;
+                        do outro, famílias sem ter o que comer.
+                    </p>
+                    <p>
+                        Começamos servindo refeições com alimentos doados. Logo ficou claro que o prato de comida resolvia o
+                        hoje, mas não o amanhã. Por isso, a cozinha passou a ser também uma sala de aula: surgiram os cursos
+                        de panificação, a horta comunitária e a ponte com empresas parceiras.
+                    </p>
+                    <p>
+                        Hoje, parte da nossa equipe é formada por pessoas que já foram atendidas pela própria ONG,
+                        e as pessoas com deficiência são nosso público prioritário em todas as atividades.
+                    </p>
+                </div>
+
+                <ol class="linha-tempo" aria-label="Linha do tempo da Nutrir+">
+                    <li class="marco">
+                        <span class="marco-ano">Início</span>
+                        <div>
+                            <h3>A primeira cozinha</h3>
+                            <p>Voluntários passam a preparar refeições com alimentos que iriam para o lixo.</p>
+                        </div>
+                    </li>
+                    <li class="marco">
+                        <span class="marco-ano">Expansão</span>
+                        <div>
+                            <h3>Banco de Alimentos e horta</h3>
+                            <p>Parcerias com mercados e feiras e o cultivo coletivo em espaços ociosos do bairro.</p>
+                        </div>
+                    </li>
+                    <li class="marco">
+                        <span class="marco-ano">Capacitação</span>
+                        <div>
+                            <h3>Panificação e Emprega+ PCD</h3>
+                            <p>Cursos profissionalizantes e encaminhamento para vagas em empresas parceiras.</p>
+                        </div>
+                    </li>
+                    <li class="marco">
+                        <span class="marco-ano">Hoje</span>
+                        <div>
+                            <h3>+50 mil refeições servidas</h3>
+                            <p>Mais de 1.200 famílias atendidas e mais de 300 pessoas empregadas.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="secao mvv-secao" id="missao" aria-labelledby="titulo-mvv">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Propósito</span>
+                <h2 id="titulo-mvv">O que nos <span>move</span></h2>
+            </div>
+
+            <div class="mvv">
+                <article class="mvv-item">
+                    <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                    <h3>Nossa missão</h3>
+                    <p>Garantir alimentação digna e abrir caminhos de capacitação e trabalho para pessoas em vulnerabilidade, combatendo o desperdício de alimentos.</p>
+                </article>
+                <article class="mvv-item">
+                    <ion-icon name="eye" aria-hidden="true"></ion-icon>
+                    <h3>Visão</h3>
+                    <p>Construir uma rede em que ninguém passe fome e todos possam viver da sua vocação, com respeito ao meio ambiente.</p>
+                </article>
+            </div>
+
+            <h3 class="subtitulo">Nossos valores</h3>
+            <ul class="valores">
+                <li>Dignidade em primeiro lugar</li>
+                <li>Sustentabilidade em cada escolha</li>
+                <li>Inclusão de pessoas com deficiência</li>
+                <li>Transparência com doadores e parceiros</li>
+                <li>Cooperação e economia solidária</li>
+                <li>Escuta atenta a cada história</li>
+            </ul>
+        </section>
+
+        <section class="secao equipe" id="equipe" aria-labelledby="titulo-equipe">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Equipe</span>
+                <h2 id="titulo-equipe">Pessoas que fazem <span>a diferença</span></h2>
+                <p>Profissionais, voluntários e ex-atendidos que hoje fazem parte da equipe.</p>
+            </div>
+
+            <div class="equipe-grade">
+                <article class="pessoa">
+                    <div class="avatar" aria-hidden="true">MS</div>
+                    <h3>Marina Souza</h3>
+                    <p class="cargo">Coordenação geral</p>
+                    <p>Cuida da gestão da ONG e das parcerias com empresas e poder público.</p>
+                </article>
+                <article class="pessoa">
+                    <div class="avatar" aria-hidden="true">CL</div>
+                    <h3>Carlos Lima</h3>
+                    <p class="cargo">Chef da Cozinha Solidária</p>
+                    <p>Planeja os cardápios e forma voluntários em boas práticas de manipulação de alimentos.</p>
+                </article>
+                <article class="pessoa">
+                    <div class="avatar" aria-hidden="true">AR</div>
+                    <h3>Ana Ribeiro</h3>
+                    <p class="cargo">Nutricionista</p>
+                    <p>Garante refeições equilibradas e orienta as oficinas de educação alimentar.</p>
+                </article>
+                <article class="pessoa">
+                    <div class="avatar" aria-hidden="true">JP</div>
+                    <h3>João Pereira</h3>
+                    <p class="cargo">Emprega+ PCD</p>
+                    <p>Acompanha cada pessoa do preparo para a vaga até a adaptação ao novo emprego.</p>
+                </article>
+            </div>
+            <p class="nota">Nomes fictícios, criados para este projeto acadêmico.</p>
+        </section>
+
+        <section class="secao transparencia" id="transparencia" aria-labelledby="titulo-transparencia">
+            <div class="transparencia-grade">
+                <div class="transparencia-texto">
+                    <span class="rotulo">Transparência</span>
+                    <h2 id="titulo-transparencia">Prestamos contas <span>de cada real</span></h2>
+                    <p>
+                        Acreditamos que confiança se constrói com clareza. Publicamos relatórios de atividades e financeiros
+                        e fazemos auditoria independente anual.
+                    </p>
+                    <a href="impacto.html" class="link-seta">Ver dados de impacto <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+                </div>
+
+                <ul class="parceiros" aria-label="Parceiros">
+                    <li><ion-icon name="storefront-outline" aria-hidden="true"></ion-icon> Mercados e feiras</li>
+                    <li><ion-icon name="business-outline" aria-hidden="true"></ion-icon> Empresas empregadoras</li>
+                    <li><ion-icon name="school-outline" aria-hidden="true"></ion-icon> Instituições de ensino</li>
+                    <li><ion-icon name="people-outline" aria-hidden="true"></ion-icon> Cooperativas</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="doe" id="doe" aria-labelledby="titulo-doe">
+            <div class="secao-cabecalho">
+                <h2 id="titulo-doe">Faça parte <span>dessa história</span></h2>
+                <p>Doe, seja voluntário ou traga sua empresa como parceira.</p>
+            </div>
+            <div class="doe-acao">
+                <a href="contato.html#doar" class="btn btn-principal">Clique para doar agora</a>
+                <a href="contato.html" class="btn btn-secundario">Falar com a equipe</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-grade">
+            <div>
+                <p class="rodape-titulo">Nutrir+</p>
+                <p>Plataforma de Sustentabilidade, Empregabilidade e Impacto Social.</p>
+                <ul class="redes">
+                    <li><a href="#" aria-label="Instagram da Nutrir+"><ion-icon name="logo-instagram" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="Facebook da Nutrir+"><ion-icon name="logo-facebook" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="YouTube da Nutrir+"><ion-icon name="logo-youtube" aria-hidden="true"></ion-icon></a></li>
+                </ul>
+            </div>
+
+            <nav aria-label="Rodapé">
+                <p class="rodape-titulo">Navegue</p>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="Mais páginas">
+                <p class="rodape-titulo">Conteúdo</p>
+                <ul>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="midia.html">Mídia</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <p class="rodape-copy">&copy; <span id="ano">2026</span> Nutrir+. Projeto acadêmico, Fatec São Caetano do Sul. CNPJ fictício 00.000.000/0001-00. <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+    <div class="cookies" id="cookies" role="dialog" aria-labelledby="cookies-texto" hidden>
+        <p id="cookies-texto">Usamos cookies para melhorar sua experiência e entender como o site é usado, em conformidade com a LGPD.</p>
+        <button type="button" class="btn btn-principal" id="cookiesAceitar">Aceitar e fechar</button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

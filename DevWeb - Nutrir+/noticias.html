@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fique por dentro das novidades da Nutrir+: conquistas da Cozinha Solidária, horta comunitária, panificação, inclusão e muito mais.">
+    <title>Notícias | Nutrir+</title>
+    <link rel="stylesheet" href="./style_css/noticias.css">
+    <script src="./javs_js/index.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="cabecalho">
+        <div class="cabecalho-interno">
+            <a href="index.html" class="logo-container" aria-label="Nutrir+, página inicial">
+                <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <circle cx="24" cy="24" r="22" fill="#2E7D4F"/>
+                    <path d="M14 30c0-9 6-15 18-16-1 11-7 17-16 17-1 0-2 0-2-1z" fill="#F4A340"/>
+                    <path d="M14 33c5-6 9-9 15-12" stroke="#FBF6EC" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-texto">Nutrir<span>+</span></span>
+            </a>
+
+            <button type="button" class="menu-botao" id="menuBotao" aria-expanded="false" aria-controls="menuPrincipal">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                <span class="sr-only">Abrir menu</span>
+            </button>
+
+            <nav class="menu" id="menuPrincipal" aria-label="Principal">
+                <ul class="links">
+                    <li><a href="sobre.html">Quem somos</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="noticias.html" aria-current="page">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+
+                <form class="busca" id="busca" role="search">
+                    <label for="campoBusca" class="sr-only">Pesquisar no site</label>
+                    <input type="search" id="campoBusca" placeholder="Pesquisar...">
+                    <button type="submit" id="botaoBusca" aria-expanded="false" aria-label="Pesquisar">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </form>
+
+                <div class="identificacao">
+                    <a href="contato.html" class="btn-menu btn-menu-contorno">Preciso de ajuda</a>
+                    <a href="contato.html#doar" class="btn-menu btn-menu-cheio">Doe agora</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <div class="titulo-pagina">
+            <h1>Notícias</h1>
+            <p>Fique por dentro de tudo que está acontecendo na Nutrir+: conquistas, projetos e histórias de recomeço.</p>
+        </div>
+
+        <section class="secao destaque-secao" aria-labelledby="titulo-destaque">
+            <h2 id="titulo-destaque" class="sr-only">Notícia em destaque</h2>
+
+            <article class="destaque">
+                <div class="destaque-visual" aria-hidden="true">
+                    <svg viewBox="0 0 400 320" focusable="false">
+                        <circle cx="200" cy="160" r="140" fill="#1E5A3C"/>
+                        <path d="M90 170h220c0 50-45 90-110 90S90 220 90 170z" fill="#F4A340"/>
+                        <path d="M90 170h220" stroke="#FBF6EC" stroke-width="6" stroke-linecap="round"/>
+                        <circle cx="150" cy="150" r="26" fill="#E5533D"/>
+                        <circle cx="205" cy="140" r="30" fill="#7BC47F"/>
+                        <circle cx="255" cy="152" r="24" fill="#FBF6EC"/>
+                        <path d="M200 110c-10-35-35-55-70-55 0 35 25 58 70 55z" fill="#7BC47F"/>
+                        <path d="M205 110c10-40 40-60 80-58-2 40-30 62-80 58z" fill="#2E7D4F"/>
+                    </svg>
+                </div>
+
+                <div class="destaque-texto">
+                    <span class="tag">Conquista</span>
+                    <h3>Cozinha Solidária chega a 50 mil refeições servidas</h3>
+                    <p class="data"><time datetime="2026-09-12">12 de setembro de 2026</time></p>
+                    <p>
+                        O marco foi alcançado graças à parceria com mercados, feiras e dezenas de voluntários que
+                        transformam alimentos que seriam descartados em pratos completos e equilibrados.
+                        Além das refeições, a cozinha se consolidou como espaço de convivência e aprendizado.
+                    </p>
+                    <a href="#" class="link-seta">Ler notícia completa <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+                </div>
+            </article>
+        </section>
+
+        <section class="secao noticias" id="noticias" aria-labelledby="titulo-noticias">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Últimas notícias</span>
+                <h2 id="titulo-noticias">Novidades da <span>Nutrir+</span></h2>
+                <p>Acompanhe o que acontece em cada um dos nossos projetos.</p>
+            </div>
+
+            <ul class="categorias" aria-label="Categorias de notícias">
+                <li><span class="tag">Conquista</span></li>
+                <li><span class="tag">Sustentabilidade</span></li>
+                <li><span class="tag">Empregabilidade</span></li>
+                <li><span class="tag">Inclusão</span></li>
+                <li><span class="tag">Eventos</span></li>
+            </ul>
+
+            <div class="noticias-grade">
+                <article class="noticia">
+                    <span class="tag">Sustentabilidade</span>
+                    <h3><a href="#">Nova horta comunitária reaproveita espaço ocioso do bairro</a></h3>
+                    <p class="data"><time datetime="2026-08-20">20 de agosto de 2026</time></p>
+                    <p>Moradores e voluntários transformaram um terreno parado em lugar de produção de hortaliças, legumes e ervas.</p>
+                </article>
+
+                <article class="noticia">
+                    <span class="tag">Empregabilidade</span>
+                    <h3><a href="#">Primeira turma de panificação é contratada por empresas parceiras</a></h3>
+                    <p class="data"><time datetime="2026-07-05">5 de julho de 2026</time></p>
+                    <p>Os formandos saíram do curso com uma profissão nas mãos e já estão trabalhando em padarias da região.</p>
+                </article>
+
+                <article class="noticia">
+                    <span class="tag">Inclusão</span>
+                    <h3><a href="#">Emprega+ PCD amplia rede de empresas parceiras</a></h3>
+                    <p class="data"><time datetime="2026-06-18">18 de junho de 2026</time></p>
+                    <p>Novas empresas se uniram ao projeto para oferecer vagas e apoiar a acessibilidade no ambiente de trabalho.</p>
+                </article>
+
+                <article class="noticia">
+                    <span class="tag">Conquista</span>
+                    <h3><a href="#">Banco de Alimentos recebe novos parceiros doadores</a></h3>
+                    <p class="data"><time datetime="2026-05-22">22 de maio de 2026</time></p>
+                    <p>Mais mercados e feirantes passaram a doar alimentos próprios para consumo, reduzindo o desperdício.</p>
+                </article>
+
+                <article class="noticia">
+                    <span class="tag">Eventos</span>
+                    <h3><a href="#">Marmita Solidária participa de feira de economia solidária</a></h3>
+                    <p class="data"><time datetime="2026-04-10">10 de abril de 2026</time></p>
+                    <p>Os cooperados apresentaram o projeto e venderam marmitas, com a renda dividida entre quem produz e a ONG.</p>
+                </article>
+
+                <article class="noticia">
+                    <span class="tag">Sustentabilidade</span>
+                    <h3><a href="#">Oficina ensina compostagem para moradores do bairro</a></h3>
+                    <p class="data"><time datetime="2026-03-14">14 de março de 2026</time></p>
+                    <p>A atividade levou noções de horta urbana e cuidado com o solo para casas, escolas e quintais.</p>
+                </article>
+            </div>
+
+            <p class="nota">Notícias fictícias, criadas para este projeto acadêmico.</p>
+        </section>
+
+        <section class="newsletter" id="newsletter" aria-labelledby="titulo-newsletter">
+            <div class="newsletter-grade">
+                <div class="newsletter-texto">
+                    <span class="rotulo">Newsletter</span>
+                    <h2 id="titulo-newsletter">Receba as novidades <span>por e-mail</span></h2>
+                    <p>Cadastre seu e-mail e acompanhe as conquistas da Nutrir+ em primeira mão.</p>
+                </div>
+
+                <form class="formulario" id="formNewsletter" novalidate>
+                    <div class="campo">
+                        <label for="emailNews">E-mail</label>
+                        <input type="email" id="emailNews" name="email" required autocomplete="email">
+                    </div>
+                    <div class="campo campo-check">
+                        <input type="checkbox" id="lgpdNews" name="lgpd" required>
+                        <label for="lgpdNews">Concordo com o uso do meu e-mail para receber novidades, conforme a LGPD.</label>
+                    </div>
+                    <button type="submit" class="btn btn-principal">Quero receber</button>
+                    <p class="status-form" id="statusNews" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-grade">
+            <div>
+                <p class="rodape-titulo">Nutrir+</p>
+                <p>Plataforma de Sustentabilidade, Empregabilidade e Impacto Social.</p>
+                <ul class="redes">
+                    <li><a href="#" aria-label="Instagram da Nutrir+"><ion-icon name="logo-instagram" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="Facebook da Nutrir+"><ion-icon name="logo-facebook" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="YouTube da Nutrir+"><ion-icon name="logo-youtube" aria-hidden="true"></ion-icon></a></li>
+                </ul>
+            </div>
+
+            <nav aria-label="Rodapé">
+                <p class="rodape-titulo">Navegue</p>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="Mais páginas">
+                <p class="rodape-titulo">Conteúdo</p>
+                <ul>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="midia.html">Mídia</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <p class="rodape-copy">&copy; <span id="ano">2026</span> Nutrir+. Projeto acadêmico, Fatec São Caetano do Sul. CNPJ fictício 00.000.000/0001-00. <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+    <div class="cookies" id="cookies" role="dialog" aria-labelledby="cookies-texto" hidden>
+        <p id="cookies-texto">Usamos cookies para melhorar sua experiência e entender como o site é usado, em conformidade com a LGPD.</p>
+        <button type="button" class="btn btn-principal" id="cookiesAceitar">Aceitar e fechar</button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
