@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recursos de acessibilidade da Nutrir+: modo para daltonismo, ajuste do tamanho do texto, alto contraste, redução de movimento e orientações de uso.">
+    <title>Acessibilidade | Nutrir+</title>
+    <link rel="stylesheet" href="./style_css/acessibilidade.css">
+    <script src="./javs_js/index.js" defer></script>
+    <script src="./javs_js/acessibilidade.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="cabecalho">
+        <div class="cabecalho-interno">
+            <a href="index.html" class="logo-container" aria-label="EcoVocação, página inicial">
+                <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <circle cx="24" cy="24" r="22" fill="#2E7D4F"/>
+                    <path d="M14 30c0-9 6-15 18-16-1 11-7 17-16 17-1 0-2 0-2-1z" fill="#F4A340"/>
+                    <path d="M14 33c5-6 9-9 15-12" stroke="#FBF6EC" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-texto">Nutrir<span>+</span></span>
+            </a>
+
+            <button type="button" class="menu-botao" id="menuBotao" aria-expanded="false" aria-controls="menuPrincipal">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                <span class="sr-only">Abrir menu</span>
+            </button>
+
+            <nav class="menu" id="menuPrincipal" aria-label="Principal">
+                <ul class="links">
+                    <li><a href="#quem-somos">Quem somos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+                <form class="busca" id="busca" role="search">
+                    <label for="campoBusca" class="sr-only">Pesquisar no site</label>
+                    <input type="search" id="campoBusca" placeholder="Pesquisar...">
+                    <button type="submit" id="botaoBusca" aria-expanded="false" aria-label="Pesquisar">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </form>
+
+                <div class="identificacao">
+                    <a href="#contato" class="btn-menu btn-menu-contorno">Preciso de ajuda</a>
+                    <a href="#doe" class="btn-menu btn-menu-cheio">Doe agora</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <div class="titulo-pagina">
+            <h1>Acessibilidade</h1>
+            <p>A Nutrir+ é para todas as pessoas. Ajuste o site do seu jeito e conheça o que fazemos para que todos consigam usá-lo.</p>
+        </div>
+
+        <section class="secao painel-secao" id="ajustes" aria-labelledby="titulo-ajustes">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Personalize</span>
+                <h2 id="titulo-ajustes">Ajustes de <span>leitura e cores</span></h2>
+                <p>Suas escolhas ficam salvas neste navegador e valem para todas as páginas que usam este recurso.</p>
+            </div>
+
+            <div class="painel">
+                <div class="grupo" role="group" aria-labelledby="g-dalt">
+                    <h3 id="g-dalt"><ion-icon name="color-palette-outline" aria-hidden="true"></ion-icon> Modo para daltonismo</h3>
+                    <p>Ajusta as cores do site para facilitar a distinção entre tons que costumam ser confundidos.</p>
+                    <div class="opcoes">
+                        <button type="button" class="opcao" data-dalt="nenhum" aria-pressed="true">Desativado</button>
+                        <button type="button" class="opcao" data-dalt="protanopia" aria-pressed="false">Protanopia <small>(vermelho)</small></button>
+                        <button type="button" class="opcao" data-dalt="deuteranopia" aria-pressed="false">Deuteranopia <small>(verde)</small></button>
+                        <button type="button" class="opcao" data-dalt="tritanopia" aria-pressed="false">Tritanopia <small>(azul)</small></button>
+                    </div>
+                    <button type="button" class="opcao opcao-chave" data-alternar="simular" aria-pressed="false">
+                        Modo simulação: ver como uma pessoa daltônica enxerga
+                    </button>
+                </div>
+
+                <div class="grupo" role="group" aria-labelledby="g-fonte">
+                    <h3 id="g-fonte"><ion-icon name="text-outline" aria-hidden="true"></ion-icon> Tamanho do texto</h3>
+                    <div class="opcoes">
+                        <button type="button" class="opcao" data-fonte="menos" aria-label="Diminuir o texto">A−</button>
+                        <button type="button" class="opcao" data-fonte="padrao" aria-label="Tamanho padrão do texto">A</button>
+                        <button type="button" class="opcao" data-fonte="mais" aria-label="Aumentar o texto">A+</button>
+                    </div>
+                </div>
+
+                <div class="grupo" role="group" aria-labelledby="g-outros">
+                    <h3 id="g-outros"><ion-icon name="options-outline" aria-hidden="true"></ion-icon> Outros ajustes</h3>
+                    <div class="opcoes">
+                        <button type="button" class="opcao" data-alternar="contraste" aria-pressed="false">Alto contraste</button>
+                        <button type="button" class="opcao" data-alternar="movimento" aria-pressed="false">Reduzir animações</button>
+                    </div>
+                </div>
+
+                <div class="painel-rodape">
+                    <button type="button" class="btn btn-secundario" data-resetar>Restaurar padrão</button>
+                    <p class="status" id="statusAcess" role="status" aria-live="polite"></p>
+                </div>
+            </div>
+
+            <div class="teste" aria-labelledby="titulo-teste">
+                <h3 id="titulo-teste">Teste as cores</h3>
+                <p>Cada cor tem um nome e um símbolo, para que a informação nunca dependa só da cor.</p>
+                <ul class="paleta">
+                    <li class="amostra a-vermelho"><span aria-hidden="true">✕</span> Vermelho: atenção</li>
+                    <li class="amostra a-laranja"><span aria-hidden="true">!</span> Laranja: aviso</li>
+                    <li class="amostra a-verde"><span aria-hidden="true">✓</span> Verde: tudo certo</li>
+                    <li class="amostra a-azul"><span aria-hidden="true">i</span> Azul: informação</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="secao tipos" id="daltonismo" aria-labelledby="titulo-tipos">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Entenda</span>
+                <h2 id="titulo-tipos">O que é <span>daltonismo</span></h2>
+                <p>É a dificuldade de distinguir certas cores. Atinge cerca de 8% dos homens e 0,5% das mulheres.</p>
+            </div>
+
+            <div class="tipos-grade">
+                <article class="tipo">
+                    <h3>Protanopia</h3>
+                    <p>Dificuldade com tons de vermelho, que tendem a parecer mais escuros e a se confundir com verde e marrom.</p>
+                </article>
+                <article class="tipo">
+                    <h3>Deuteranopia</h3>
+                    <p>Dificuldade com tons de verde. É o tipo mais comum e também confunde verde com vermelho.</p>
+                </article>
+                <article class="tipo">
+                    <h3>Tritanopia</h3>
+                    <p>Dificuldade com azul e amarelo. É mais rara e pode misturar azul com verde.</p>
+                </article>
+            </div>
+            <p class="nota">O modo para daltonismo é um auxílio visual e não substitui avaliação com profissional de saúde.</p>
+        </section>
+
+        <section class="secao recursos" id="recursos" aria-labelledby="titulo-recursos">
+            <div class="secao-cabecalho">
+                <span class="rotulo">No site</span>
+                <h2 id="titulo-recursos">O que já <span>fazemos</span></h2>
+                <p>Boas práticas aplicadas na construção das páginas da Nutrir+.</p>
+            </div>
+
+            <ul class="recursos-grade">
+                <li class="recurso">
+                    <ion-icon name="keypad-outline" aria-hidden="true"></ion-icon>
+                    <h3>Navegação pelo teclado</h3>
+                    <p>Todos os links, botões e campos podem ser usados com Tab, Shift+Tab e Enter, com foco bem visível.</p>
+                </li>
+                <li class="recurso">
+                    <ion-icon name="arrow-down-circle-outline" aria-hidden="true"></ion-icon>
+                    <h3>Pular para o conteúdo</h3>
+                    <p>O primeiro item ao apertar Tab é o link que leva direto ao conteúdo principal, sem passar pelo menu.</p>
+                </li>
+                <li class="recurso">
+                    <ion-icon name="ear-outline" aria-hidden="true"></ion-icon>
+                    <h3>Leitores de tela</h3>
+                    <p>Usamos HTML semântico, títulos em ordem, rótulos nos campos e descrições nos ícones e imagens.</p>
+                </li>
+                <li class="recurso">
+                    <ion-icon name="contrast-outline" aria-hidden="true"></ion-icon>
+                    <h3>Contraste e leitura</h3>
+                    <p>Cores com bom contraste entre texto e fundo e informações sempre acompanhadas de texto.</p>
+                </li>
+                <li class="recurso">
+                    <ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon>
+                    <h3>Adaptação a telas</h3>
+                    <p>O layout se ajusta a celulares, tablets e computadores e aceita ampliação do texto.</p>
+                </li>
+                <li class="recurso">
+                    <ion-icon name="pause-circle-outline" aria-hidden="true"></ion-icon>
+                    <h3>Menos movimento</h3>
+                    <p>Respeitamos a preferência do sistema por animações reduzidas e você pode ativá-la aqui também.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="secao dicas" id="dicas" aria-labelledby="titulo-dicas">
+            <div class="dicas-grade">
+                <div>
+                    <span class="rotulo">Dicas</span>
+                    <h2 id="titulo-dicas">Mais formas de <span>usar o site</span></h2>
+                    <p>Seu navegador e seu aparelho também têm recursos que ajudam na leitura.</p>
+                </div>
+                <ul class="dicas-lista">
+                    <li><strong>Ampliar a página:</strong> use Ctrl e + (Cmd e + no Mac) ou o gesto de pinça no celular.</li>
+                    <li><strong>Leitura em voz alta:</strong> NVDA e Narrador (Windows), VoiceOver (Apple) e TalkBack (Android).</li>
+                    <li><strong>Modo leitura:</strong> disponível na maioria dos navegadores para simplificar a página.</li>
+                    <li><strong>Voz e teclado:</strong> comandos de voz do sistema também funcionam com os botões e links.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="doe" id="ajuda" aria-labelledby="titulo-ajuda">
+            <div class="secao-cabecalho">
+                <h2 id="titulo-ajuda">Encontrou alguma <span>barreira?</span></h2>
+                <p>Conte para nós o que não funcionou. Sua opinião nos ajuda a melhorar.</p>
+            </div>
+            <div class="doe-acao">
+                <a href="contato.html" class="btn btn-principal">Relatar um problema</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-grade">
+            <div>
+                <p class="rodape-titulo">Nutrir+</p>
+                <p>Plataforma de Sustentabilidade, Empregabilidade e Impacto Social.</p>
+                <ul class="redes">
+                    <li><a href="#" aria-label="Instagram da Nutrir+"><ion-icon name="logo-instagram" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="Facebook da Nutrir+"><ion-icon name="logo-facebook" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="YouTube da Nutrir+"><ion-icon name="logo-youtube" aria-hidden="true"></ion-icon></a></li>
+                </ul>
+            </div>
+
+            <nav aria-label="Rodapé">
+                <p class="rodape-titulo">Navegue</p>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="Mais páginas">
+                <p class="rodape-titulo">Conteúdo</p>
+                <ul>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="midia.html">Mídia</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <p class="rodape-copy">&copy; <span id="ano">2026</span> Nutrir+. Projeto acadêmico, Fatec São Caetano do Sul. CNPJ fictício 00.000.000/0001-00. <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+    <div class="cookies" id="cookies" role="dialog" aria-labelledby="cookies-texto" hidden>
+        <p id="cookies-texto">Usamos cookies para melhorar sua experiência e entender como o site é usado, em conformidade com a LGPD.</p>
+        <button type="button" class="btn btn-principal" id="cookiesAceitar">Aceitar e fechar</button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
