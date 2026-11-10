@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fale com a Nutrir+: peça ajuda, faça uma doação, seja voluntário ou proponha uma parceria. Veja e-mail, telefone, endereço e formulário de contato.">
+    <title>Contato | Nutrir+</title>
+    <link rel="stylesheet" href="./style_css/contato.css">
+    <script src="./javs_js/index.js" defer></script>
+    <script src="./javs_js/acessibilidade.js" defer></script>
+    <script src="./javs_js/contato.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="cabecalho">
+        <div class="cabecalho-interno">
+            <a href="index.html" class="logo-container" aria-label="EcoVocação, página inicial">
+                <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <circle cx="24" cy="24" r="22" fill="#2E7D4F"/>
+                    <path d="M14 30c0-9 6-15 18-16-1 11-7 17-16 17-1 0-2 0-2-1z" fill="#F4A340"/>
+                    <path d="M14 33c5-6 9-9 15-12" stroke="#FBF6EC" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-texto">Nutrir<span>+</span></span>
+            </a>
+
+            <button type="button" class="menu-botao" id="menuBotao" aria-expanded="false" aria-controls="menuPrincipal">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                <span class="sr-only">Abrir menu</span>
+            </button>
+
+            <nav class="menu" id="menuPrincipal" aria-label="Principal">
+                <ul class="links">
+                    <li><a href="sobre.html">Quem somos</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+
+                <form class="busca" id="busca" role="search">
+                    <label for="campoBusca" class="sr-only">Pesquisar no site</label>
+                    <input type="search" id="campoBusca" placeholder="Pesquisar...">
+                    <button type="submit" id="botaoBusca" aria-expanded="false" aria-label="Pesquisar">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </form>
+
+                <div class="identificacao">
+                    <a href="contato.html#fale" class="btn-menu btn-menu-contorno">Preciso de ajuda</a>
+                    <a href="contato.html#doe" class="btn-menu btn-menu-cheio">Doe agora</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <div class="titulo-pagina">
+            <h1>Contato</h1>
+            <p>Precisa de ajuda, quer doar, ser voluntário ou levar sua empresa como parceira? Fale com a gente.</p>
+        </div>
+
+        <section class="secao fale" id="fale" aria-labelledby="titulo-fale">
+            <div class="fale-grade">
+                <div class="fale-info">
+                    <span class="rotulo">Fale conosco</span>
+                    <h2 id="titulo-fale">Estamos aqui para <span>ouvir você</span></h2>
+                    <p>Escolha o canal que for mais fácil. Respondemos o mais rápido possível em dias úteis.</p>
+
+                    <ul class="canais">
+                        <li>
+                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                            <div><strong>E-mail</strong><span>contato@nutrir+.example</span></div>
+                        </li>
+                        <li>
+                            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                            <div><strong>Telefone</strong><span>(11) 0000-0000</span></div>
+                        </li>
+                        <li>
+                            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                            <div><strong>Endereço</strong><span>Rua das Flores, 100, São Caetano do Sul, SP</span></div>
+                        </li>
+                        <li>
+                            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                            <div><strong>Atendimento</strong><span>Segunda a sexta, das 9h às 17h</span></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="formulario" id="formFale" novalidate>
+                    <h3>Envie uma mensagem</h3>
+                    <p class="obrigatorio">Campos marcados com * são obrigatórios.</p>
+
+                    <div class="campo">
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" id="nome" name="nome" required autocomplete="name" aria-describedby="erro-nome">
+                        <span class="erro" id="erro-nome"></span>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" aria-describedby="erro-email">
+                        <span class="erro" id="erro-email"></span>
+                    </div>
+                    <div class="campo">
+                        <label for="assunto">Assunto *</label>
+                        <select id="assunto" name="assunto" required aria-describedby="erro-assunto">
+                            <option value="">Selecione</option>
+                            <option value="ajuda">Preciso de ajuda</option>
+                            <option value="doacao">Quero doar</option>
+                            <option value="voluntariado">Quero ser voluntário</option>
+                            <option value="parceria">Parceria para empresas</option>
+                            <option value="imprensa">Imprensa</option>
+                            <option value="acessibilidade">Relatar problema de acessibilidade</option>
+                        </select>
+                        <span class="erro" id="erro-assunto"></span>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required aria-describedby="erro-mensagem"></textarea>
+                        <span class="erro" id="erro-mensagem"></span>
+                    </div>
+                    <div class="campo campo-check">
+                        <input type="checkbox" id="lgpd" name="lgpd" required aria-describedby="erro-lgpd">
+                        <label for="lgpd">Concordo com o uso dos meus dados para retorno do contato, conforme a LGPD. *</label>
+                    </div>
+                    <span class="erro" id="erro-lgpd"></span>
+
+                    <button type="submit" class="btn btn-principal">Enviar mensagem</button>
+                    <p class="status-form" id="statusFale" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="doar" id="doar" aria-labelledby="titulo-doar">
+            <div class="doar-interno">
+                <div class="secao-cabecalho">
+                    <span class="rotulo">Doe</span>
+                    <h2 id="titulo-doar">Seja um agente de <span>transformação</span></h2>
+                    <p>Você pode apoiar a Nutrir+ de várias formas. Ajude a manter o prato cheio e as portas abertas!</p>
+                </div>
+
+                <div class="doar-grade">
+                    <article class="doar-card">
+                        <ion-icon name="calendar" aria-hidden="true"></ion-icon>
+                        <h3>Doação mensal</h3>
+                        <p>Uma contribuição recorrente garante refeições e cursos o ano inteiro.</p>
+                    </article>
+                    <article class="doar-card">
+                        <ion-icon name="gift" aria-hidden="true"></ion-icon>
+                        <h3>Doação avulsa</h3>
+                        <p>Contribua uma vez, no valor que puder, por cartão, boleto ou PIX.</p>
+                    </article>
+                    <article class="doar-card">
+                        <ion-icon name="basket" aria-hidden="true"></ion-icon>
+                        <h3>Alimentos e voluntariado</h3>
+                        <p>Doe alimentos não perecíveis ou ofereça seu tempo na cozinha e nas oficinas.</p>
+                    </article>
+                </div>
+
+                <div class="pix-caixa">
+                    <ion-icon name="qr-code-outline" aria-hidden="true"></ion-icon>
+                    <div>
+                        <h3>Doe via PIX</h3>
+                        <p>Chave: <strong>contato@nutrir+.example</strong><br>CNPJ 00.000.000/0001-00 (fictício)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao comoajudar" id="como-ajudar" aria-labelledby="titulo-ajudar">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Outros caminhos</span>
+                <h2 id="titulo-ajudar">Quer <span>fazer parte?</span></h2>
+                <p>Escolha o assunto no formulário e nossa equipe retorna com os próximos passos.</p>
+            </div>
+
+            <div class="caminhos">
+                <article class="caminho">
+                    <ion-icon name="hand-left-outline" aria-hidden="true"></ion-icon>
+                    <h3>Preciso de ajuda</h3>
+                    <p>Refeições, cestas básicas e orientação sobre cursos e vagas, sem burocracia.</p>
+                </article>
+                <article class="caminho">
+                    <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                    <h3>Quero ser voluntário</h3>
+                    <p>Ajude na cozinha, na horta, nas oficinas ou na organização de eventos.</p>
+                </article>
+                <article class="caminho">
+                    <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                    <h3>Parceria para empresas</h3>
+                    <p>Doe alimentos, abra vagas de emprego ou apoie projetos de capacitação.</p>
+                </article>
+            </div>
+            <p class="nota">Dados de contato fictícios, criados para este projeto acadêmico.</p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-grade">
+            <div>
+                <p class="rodape-titulo">Nutrir+</p>
+                <p>Plataforma de Sustentabilidade, Empregabilidade e Impacto Social.</p>
+                <ul class="redes">
+                    <li><a href="#" aria-label="Instagram da Nutrir+"><ion-icon name="logo-instagram" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="Facebook da Nutrir+"><ion-icon name="logo-facebook" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="YouTube da Nutrir+"><ion-icon name="logo-youtube" aria-hidden="true"></ion-icon></a></li>
+                </ul>
+            </div>
+
+            <nav aria-label="Rodapé">
+                <p class="rodape-titulo">Navegue</p>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="Mais páginas">
+                <p class="rodape-titulo">Conteúdo</p>
+                <ul>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="midia.html">Mídia</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <p class="rodape-copy">&copy; <span id="ano">2026</span> Nutrir+. Projeto acadêmico, Fatec São Caetano do Sul. CNPJ fictício 00.000.000/0001-00. <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+    <div class="cookies" id="cookies" role="dialog" aria-labelledby="cookies-texto" hidden>
+        <p id="cookies-texto">Usamos cookies para melhorar sua experiência e entender como o site é usado, em conformidade com a LGPD.</p>
+        <button type="button" class="btn btn-principal" id="cookiesAceitar">Aceitar e fechar</button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
