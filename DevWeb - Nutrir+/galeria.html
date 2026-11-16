@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de fotos da Nutrir+: Cozinha Solidária, Horta Comunitária, oficinas de capacitação e eventos.">
+    <title>Galeria | Nutrir+</title>
+    <link rel="stylesheet" href="./style_css/galeria.css">
+    <script src="./javs_js/index.js" defer></script>
+    <script src="./javs_js/acessibilidade.js" defer></script>
+    <script src="./javs_js/galeria.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="cabecalho">
+        <div class="cabecalho-interno">
+            <a href="index.html" class="logo-container" aria-label="EcoVocação, página inicial">
+                <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <circle cx="24" cy="24" r="22" fill="#2E7D4F"/>
+                    <path d="M14 30c0-9 6-15 18-16-1 11-7 17-16 17-1 0-2 0-2-1z" fill="#F4A340"/>
+                    <path d="M14 33c5-6 9-9 15-12" stroke="#FBF6EC" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-texto">Nutrir<span>+</span></span>
+            </a>
+
+            <button type="button" class="menu-botao" id="menuBotao" aria-expanded="false" aria-controls="menuPrincipal">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                <span class="sr-only">Abrir menu</span>
+            </button>
+
+            <nav class="menu" id="menuPrincipal" aria-label="Principal">
+                <ul class="links">
+                    <li><a href="#quem-somos">Quem somos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+                <form class="busca" id="busca" role="search">
+                    <label for="campoBusca" class="sr-only">Pesquisar no site</label>
+                    <input type="search" id="campoBusca" placeholder="Pesquisar...">
+                    <button type="submit" id="botaoBusca" aria-expanded="false" aria-label="Pesquisar">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </form>
+
+                <div class="identificacao">
+                    <a href="#contato" class="btn-menu btn-menu-contorno">Preciso de ajuda</a>
+                    <a href="#doe" class="btn-menu btn-menu-cheio">Doe agora</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <div class="titulo-pagina">
+            <h1>Galeria</h1>
+            <p>Momentos da Nutrir+: pratos servidos, hortas que crescem, turmas que se formam e pessoas que se encontram.</p>
+        </div>
+
+        <section class="secao galeria" id="fotos" aria-labelledby="titulo-fotos">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Nossos registros</span>
+                <h2 id="titulo-fotos">Fotos que contam <span>histórias</span></h2>
+                <p>Escolha uma categoria e clique em uma foto para ampliar.</p>
+            </div>
+
+            <div class="filtros" role="group" aria-label="Filtrar por categoria">
+                <button type="button" class="filtro" data-filtro="todas" aria-pressed="true">Todas</button>
+                <button type="button" class="filtro" data-filtro="cozinha" aria-pressed="false">Cozinha Solidária</button>
+                <button type="button" class="filtro" data-filtro="horta" aria-pressed="false">Horta Comunitária</button>
+                <button type="button" class="filtro" data-filtro="oficinas" aria-pressed="false">Oficinas</button>
+                <button type="button" class="filtro" data-filtro="eventos" aria-pressed="false">Eventos</button>
+            </div>
+
+            <p class="contagem" id="contagemFotos" role="status" aria-live="polite"></p>
+
+            <ul class="fotos-grade" id="fotosGrade">
+                <li class="foto-item" data-cat="cozinha">
+                    <button type="button" class="foto" data-legenda="Voluntários montam as marmitas do almoço" data-info="Cozinha Solidária · Setembro de 2026" aria-label="Ampliar foto: Voluntários montam as marmitas do almoço">
+                        <span class="visual fundo-verde">
+                            <img src="./img/pexels-iara-melo-558346607-30635717.jpg" alt="Mão espalhando cebolinha sobre fileiras de marmitas já montadas">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Cozinha Solidária</span>Voluntários montam as marmitas do almoço</span>
+                    </button>
+                </li>
+                <li class="foto-item" data-cat="cozinha">
+                    <button type="button" class="foto" data-legenda="Refeição equilibrada pronta para servir" data-info="Cozinha Solidária · Setembro de 2026" aria-label="Ampliar foto: Refeição equilibrada pronta para servir">
+                        <span class="visual fundo-laranja">
+                            <img src="./img/pexels-iara-melo-558346607-30635714.jpg" alt="Mão segurando uma marmita com arroz, feijão, brócolis e cenoura">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Cozinha Solidária</span>Refeição equilibrada pronta para servir</span>
+                    </button>
+                </li>
+                <li class="foto-item" data-cat="cozinha">
+                    <button type="button" class="foto" data-legenda="Marco de 50 mil refeições servidas" data-info="Cozinha Solidária · Setembro de 2026" aria-label="Ampliar foto: Marco de 50 mil refeições servidas">
+                        <span class="visual fundo-creme">
+                            <img src="./img/pexels-joaquinrr-38531023.jpg" alt="Voluntárias de touca e luvas servindo comida em bandejas">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Cozinha Solidária</span>Marco de 50 mil refeições servidas</span>
+                    </button>
+                </li>
+                <li class="foto-item" data-cat="horta">
+                    <button type="button" class="foto" data-legenda="Mudas de hortaliças no terreno do bairro" data-info="Horta Comunitária · Agosto de 2026" aria-label="Ampliar foto: Mudas de hortaliças no terreno do bairro">
+                        <span class="visual fundo-verde">
+                            <img src="./img/pexels-maria-daniela-varela-2159635459-37692188.jpg" alt="Mulher cuidando de um canteiro de hortaliças com um balde ao lado">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Horta Comunitária</span>Mudas de hortaliças no terreno do bairro</span>
+                    </button>
+                </li>
+                <li class="foto-item" data-cat="horta">
+                    <button type="button" class="foto" data-legenda="Moradores cuidando dos canteiros" data-info="Horta Comunitária · Agosto de 2026" aria-label="Ampliar foto: Moradores cuidando dos canteiros">
+                        <span class="visual fundo-laranja">
+                            <img src="./img/pexels-kampus-7658761.jpg" alt="Duas pessoas agachadas cuidando de um canteiro ao lado de uma cerca branca">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Horta Comunitária</span>Moradores cuidando dos canteiros</span>
+                    </button>
+                </li>
+                <li class="foto-item" data-cat="horta">
+                    <button type="button" class="foto" data-legenda="Oficina de compostagem para vizinhos" data-info="Horta Comunitária · Março de 2026" aria-label="Ampliar foto: Oficina de compostagem para vizinhos">
+                        <span class="visual fundo-creme">
+                            <img src="./img/pexels-eva-bronzini-5503338.jpg" alt="Composteira de madeira cheia de restos de legumes e verduras">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Horta Comunitária</span>Oficina de compostagem para vizinhos</span>
+                    </button>
+                </li>
+                <li class="foto-item" data-cat="oficinas">
+                    <button type="button" class="foto" data-legenda="Primeira turma de panificação em aula" data-info="Oficinas · Julho de 2026" aria-label="Ampliar foto: Primeira turma de panificação em aula">
+                        <span class="visual fundo-laranja">
+                            <img src="./img/pexels-daria-133959593-10260554.jpg" alt="Várias mãos modelando massa de pão sobre uma bancada coberta de farinha">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Oficinas</span>Primeira turma de panificação em aula</span>
+                    </button>
+                </li>
+                <li class="foto-item" data-cat="oficinas">
+                    <button type="button" class="foto" data-legenda="Pães da turma saindo do forno" data-info="Oficinas · Julho de 2026" aria-label="Ampliar foto: Pães da turma saindo do forno">
+                        <span class="visual fundo-creme">
+                            <img src="./img/pexels-travel-with-lenses-734723610-30918893.jpg" alt="Pães dourados assando no forno">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Oficinas</span>Pães da turma saindo do forno</span>
+                    </button>
+                </li>
+                <li class="foto-item" data-cat="oficinas">
+                    <button type="button" class="foto" data-legenda="Capacitação do Emprega+ PCD" data-info="Oficinas · Junho de 2026" aria-label="Ampliar foto: Capacitação do Emprega+ PCD">
+                        <span class="visual fundo-verde">
+                            <img src="./img/issa.jpg" alt="Equipe de touca e luvas trabalhando em uma cozinha coletiva">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Oficinas</span>Capacitação do Emprega+ PCD</span>
+                    </button>
+                </li>
+                <li class="foto-item" data-cat="eventos">
+                    <button type="button" class="foto" data-legenda="Feira de economia solidária com a Marmita Solidária" data-info="Eventos · Abril de 2026" aria-label="Ampliar foto: Feira de economia solidária com a Marmita Solidária">
+                        <span class="visual fundo-creme">
+                            <img src="./img/pexels-iara-melo-558346607-30635717.jpg" alt="Fileiras de marmitas prontas, organizadas em bandejas">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Eventos</span>Feira de economia solidária com a Marmita Solidária</span>
+                    </button>
+                </li>
+                <li class="foto-item" data-cat="eventos">
+                    <button type="button" class="foto" data-legenda="Encontro com mercados e feirantes doadores" data-info="Eventos · Maio de 2026" aria-label="Ampliar foto: Encontro com mercados e feirantes doadores">
+                        <span class="visual fundo-verde">
+                            <img src="./img/pexels-emrehan-colak-1667477484-36719733.jpg" alt="Agricultora trabalhando em uma plantação de hortaliças">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Eventos</span>Encontro com mercados e feirantes doadores</span>
+                    </button>
+                </li>
+                <li class="foto-item" data-cat="eventos">
+                    <button type="button" class="foto" data-legenda="Mutirão de voluntários no Banco de Alimentos" data-info="Eventos · Maio de 2026" aria-label="Ampliar foto: Mutirão de voluntários no Banco de Alimentos">
+                        <span class="visual fundo-laranja">
+                            <img src="./img/pexels-caleboquendo-34612590.jpg" alt="Marmita com arroz, feijão e legumes sendo entregue">
+                        </span>
+                        <span class="foto-legenda"><span class="tag">Eventos</span>Mutirão de voluntários no Banco de Alimentos</span>
+                    </button>
+                </li>
+            </ul>
+
+            <p class="nota">Fotos de banco de imagens gratuito (Pexels), usadas neste projeto acadêmico.</p>
+        </section>
+
+        <section class="doe" id="ajuda" aria-labelledby="titulo-ajuda">
+            <div class="secao-cabecalho">
+                <h2 id="titulo-ajuda">Ajude a escrever os <span>próximos registros</span></h2>
+                <p>Cada foto aqui só existe porque alguém doou, cozinhou ou plantou. Faça parte.</p>
+            </div>
+            <div class="doe-acao">
+                <a href="contato.html#doar" class="btn btn-principal">Clique para doar agora</a>
+                <a href="contato.html" class="btn btn-secundario">Ser voluntário</a>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxLegenda">
+        <div class="lightbox-corpo">
+            <button type="button" class="lb-fechar" id="lbFechar" aria-label="Fechar imagem"><ion-icon name="close" aria-hidden="true"></ion-icon></button>
+            <div class="lb-visual" id="lbVisual"></div>
+            <div class="lb-texto">
+                <p class="lb-legenda" id="lightboxLegenda"></p>
+                <p class="lb-info" id="lbInfo"></p>
+            </div>
+            <div class="lb-nav">
+                <button type="button" class="btn btn-secundario" id="lbAnterior"><ion-icon name="chevron-back" aria-hidden="true"></ion-icon> Anterior</button>
+                <span class="lb-posicao" id="lbPosicao" aria-live="polite"></span>
+                <button type="button" class="btn btn-secundario" id="lbProxima">Próxima <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon></button>
+            </div>
+        </div>
+    </dialog>
+
+    <footer class="rodape">
+        <div class="rodape-grade">
+            <div>
+                <p class="rodape-titulo">Nutrir+</p>
+                <p>Plataforma de Sustentabilidade, Empregabilidade e Impacto Social.</p>
+                <ul class="redes">
+                    <li><a href="#" aria-label="Instagram da Nutrir+"><ion-icon name="logo-instagram" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="Facebook da Nutrir+"><ion-icon name="logo-facebook" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="YouTube da Nutrir+"><ion-icon name="logo-youtube" aria-hidden="true"></ion-icon></a></li>
+                </ul>
+            </div>
+
+            <nav aria-label="Rodapé">
+                <p class="rodape-titulo">Navegue</p>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="Mais páginas">
+                <p class="rodape-titulo">Conteúdo</p>
+                <ul>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="midia.html">Mídia</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <p class="rodape-copy">&copy; <span id="ano">2026</span> Nutrir+. Projeto acadêmico, Fatec São Caetano do Sul. CNPJ fictício 00.000.000/0001-00. <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+    <div class="cookies" id="cookies" role="dialog" aria-labelledby="cookies-texto" hidden>
+        <p id="cookies-texto">Usamos cookies para melhorar sua experiência e entender como o site é usado, em conformidade com a LGPD.</p>
+        <button type="button" class="btn btn-principal" id="cookiesAceitar">Aceitar e fechar</button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

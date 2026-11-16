@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Nutrir+ na mídia: reportagens, entrevistas, vídeos e kit de imprensa com textos oficiais, números e identidade visual.">
+    <title>Mídia | Nutrir+</title>
+    <link rel="stylesheet" href="./style_css/midia.css">
+    <script src="./javs_js/index.js" defer></script>
+    <script src="./javs_js/acessibilidade.js" defer></script>
+    <script src="./javs_js/midia.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="cabecalho">
+        <div class="cabecalho-interno">
+            <a href="index.html" class="logo-container" aria-label="EcoVocação, página inicial">
+                <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <circle cx="24" cy="24" r="22" fill="#2E7D4F"/>
+                    <path d="M14 30c0-9 6-15 18-16-1 11-7 17-16 17-1 0-2 0-2-1z" fill="#F4A340"/>
+                    <path d="M14 33c5-6 9-9 15-12" stroke="#FBF6EC" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-texto">Nutrir<span>+</span></span>
+            </a>
+
+            <button type="button" class="menu-botao" id="menuBotao" aria-expanded="false" aria-controls="menuPrincipal">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                <span class="sr-only">Abrir menu</span>
+            </button>
+
+            <nav class="menu" id="menuPrincipal" aria-label="Principal">
+                <ul class="links">
+                    <li><a href="#quem-somos">Quem somos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+                <form class="busca" id="busca" role="search">
+                    <label for="campoBusca" class="sr-only">Pesquisar no site</label>
+                    <input type="search" id="campoBusca" placeholder="Pesquisar...">
+                    <button type="submit" id="botaoBusca" aria-expanded="false" aria-label="Pesquisar">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </form>
+
+                <div class="identificacao">
+                    <a href="#contato" class="btn-menu btn-menu-contorno">Preciso de ajuda</a>
+                    <a href="#doe" class="btn-menu btn-menu-cheio">Doe agora</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <div class="titulo-pagina">
+            <h1>Mídia</h1>
+            <p>Reportagens, entrevistas, vídeos e um kit de imprensa para quem quer contar a história da Nutrir+.</p>
+        </div>
+
+        <section class="secao imprensa" id="imprensa" aria-labelledby="titulo-imprensa">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Na imprensa</span>
+                <h2 id="titulo-imprensa">Falam da <span>Nutrir+</span></h2>
+                <p>Veja onde o nosso trabalho foi destaque.</p>
+            </div>
+
+            <div class="materias">
+                <article class="materia materia-destaque">
+                    <span class="tag">Reportagem</span>
+                    <h3><a href="#">Cozinha que serve 50 mil refeições também ensina uma profissão</a></h3>
+                    <p class="fonte">Jornal Regional do ABC · <time datetime="2026-09-18">18 de setembro de 2026</time></p>
+                    <p>A reportagem acompanhou um dia na Cozinha Solidária e conversou com voluntários e ex-atendidos que hoje fazem parte da equipe.</p>
+                </article>
+
+                <article class="materia">
+                    <span class="tag">Entrevista</span>
+                    <h3><a href="#">"Alimento é o primeiro passo, trabalho é o segundo"</a></h3>
+                    <p class="fonte">Rádio Comunidade FM · <time datetime="2026-08-27">27 de agosto de 2026</time></p>
+                    <p>A coordenação geral explica como a ONG une combate à fome, reaproveitamento de alimentos e emprego.</p>
+                </article>
+
+                <article class="materia">
+                    <span class="tag">Reportagem</span>
+                    <h3><a href="#">Horta comunitária transforma terreno ocioso em fonte de alimento</a></h3>
+                    <p class="fonte">Portal Sustentável · <time datetime="2026-08-25">25 de agosto de 2026</time></p>
+                    <p>Moradores e voluntários mostram como o cultivo coletivo gera renda e educação ambiental.</p>
+                </article>
+
+                <article class="materia">
+                    <span class="tag">Podcast</span>
+                    <h3><a href="#">Inclusão no mercado de trabalho: o caso do Emprega+ PCD</a></h3>
+                    <p class="fonte">Podcast Gente que Faz · <time datetime="2026-07-14">14 de julho de 2026</time></p>
+                    <p>Episódio sobre o preparo e o acompanhamento de pessoas com deficiência até a adaptação ao novo emprego.</p>
+                </article>
+            </div>
+            <p class="nota">Veículos e matérias fictícios, criados para este projeto acadêmico.</p>
+        </section>
+
+        <section class="secao videos" id="videos" aria-labelledby="titulo-videos">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Vídeos</span>
+                <h2 id="titulo-videos">Veja a Nutrir+ <span>em ação</span></h2>
+                <p>Conheça os projetos em poucos minutos.</p>
+            </div>
+
+            <div class="videos-grade">
+                <article class="video">
+                    <video src="./img/cozinhasolidaria.mp4" controls poster="imagens/video1-poster.jpg" aria-label="Vídeo: Um dia na Cozinha Solidária, 3 minutos e 20 segundos">
+                        <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
+                        <span class="duracao">3:20</span>
+                    </video>
+                    <h3>Um dia na Cozinha Solidária</h3>
+                    <p>Do recebimento dos alimentos ao prato servido.</p>
+                </article>
+                <article class="video">
+                    <a href="#" class="video-capa fundo-laranja" aria-label="Assistir: Da panificação ao primeiro emprego, 4 minutos e 5 segundos">
+                        <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
+                        <span class="duracao">4:05</span>
+                    </a>
+                    <h3>Da panificação ao primeiro emprego</h3>
+                    <p>A história da primeira turma contratada por empresas parceiras.</p>
+                </article>
+                <article class="video">
+                    <video src="./img/hortacom.mp4" controls poster="imagens/video3-poster.jpg" aria-label="Vídeo: Como funciona a Horta Comunitária, 2 minutos e 40 segundos">
+                        <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
+                        <span class="duracao">2:40</span>
+                    </video>
+                    <h3>Como funciona a Horta Comunitária</h3>
+                    <p>Cultivo coletivo, compostagem e educação ambiental.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao kit" id="kit-imprensa" aria-labelledby="titulo-kit">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Para jornalistas e parceiros</span>
+                <h2 id="titulo-kit">Kit de <span>imprensa</span></h2>
+                <p>Tudo o que você precisa para falar da Nutrir+ com precisão.</p>
+            </div>
+
+            <div class="kit-grade">
+                <article class="kit-bloco kit-texto">
+                    <h3>Sobre a Nutrir+</h3>
+                    <p id="textoOficial">
+                        A Nutrir+ é uma ONG que combate a fome, reaproveita alimentos e ajuda pessoas em situação de
+                        vulnerabilidade a se reerguerem com capacitação e emprego. Começa com um prato de comida e vai além:
+                        oferece cursos, conecta pessoas a empresas parceiras e tem as pessoas com deficiência como público prioritário.
+                        Já são mais de 50 mil refeições servidas, mais de 1.200 famílias atendidas e mais de 300 pessoas empregadas.
+                    </p>
+                    <button type="button" class="btn btn-secundario" id="copiarTexto">
+                        <ion-icon name="copy-outline" aria-hidden="true"></ion-icon> Copiar texto
+                    </button>
+                    <p class="status-copia" id="statusCopia" role="status" aria-live="polite"></p>
+                </article>
+
+                <article class="kit-bloco">
+                    <h3>Números-chave</h3>
+                    <ul class="numeros">
+                        <li><strong>+50 mil</strong><span>refeições servidas</span></li>
+                        <li><strong>+1.200</strong><span>famílias atendidas</span></li>
+                        <li><strong>+300</strong><span>pessoas empregadas</span></li>
+                    </ul>
+                </article>
+
+                <article class="kit-bloco">
+                    <h3>Cores da marca</h3>
+                    <ul class="cores">
+                        <li><span class="amostra" style="background:#12372A" aria-hidden="true"></span> Verde escuro <code>#12372A</code></li>
+                        <li><span class="amostra" style="background:#2E7D4F" aria-hidden="true"></span> Verde <code>#2E7D4F</code></li>
+                        <li><span class="amostra" style="background:#7BC47F" aria-hidden="true"></span> Verde claro <code>#7BC47F</code></li>
+                        <li><span class="amostra" style="background:#F4A340" aria-hidden="true"></span> Laranja <code>#F4A340</code></li>
+                        <li><span class="amostra" style="background:#FBF6EC;border:1px solid #D9CFB8" aria-hidden="true"></span> Creme <code>#FBF6EC</code></li>
+                    </ul>
+                </article>
+
+                <article class="kit-bloco">
+                    <h3>Logo</h3>
+                    <div class="logo-previa">
+                        <svg viewBox="0 0 48 48" width="64" height="64" role="img" aria-label="Logo da Nutrir+: folha laranja sobre círculo verde" focusable="false">
+                            <circle cx="24" cy="24" r="22" fill="#2E7D4F"/>
+                            <path d="M14 30c0-9 6-15 18-16-1 11-7 17-16 17-1 0-2 0-2-1z" fill="#F4A340"/>
+                            <path d="M14 33c5-6 9-9 15-12" stroke="#FBF6EC" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                        <span class="logo-previa-texto">Nutrir<span>+</span></span>
+                    </div>
+                    <p class="kit-aviso">Use o logo sobre fundo claro ou verde escuro, sem distorcer nem trocar as cores.</p>
+                </article>
+            </div>
+
+            <div class="downloads">
+                <h3>Materiais para download</h3>
+                <ul>
+                    <li><a href="#" class="download"><ion-icon name="image-outline" aria-hidden="true"></ion-icon> Logo em PNG e SVG <small>(em breve)</small></a></li>
+                    <li><a href="#" class="download"><ion-icon name="camera-outline" aria-hidden="true"></ion-icon> Fotos em alta resolução <small>(em breve)</small></a></li>
+                    <li><a href="#" class="download"><ion-icon name="document-text-outline" aria-hidden="true"></ion-icon> Relatório de atividades <small>(em breve)</small></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="doe" id="contato-imprensa" aria-labelledby="titulo-contato-imprensa">
+            <div class="secao-cabecalho">
+                <h2 id="titulo-contato-imprensa">Contato para <span>imprensa</span></h2>
+                <p>Quer uma entrevista, uma pauta ou mais informações? Escolha o assunto "Imprensa" no formulário.</p>
+            </div>
+            <div class="doe-acao">
+                <a href="contato.html" class="btn btn-principal">Falar com a assessoria</a>
+                <a href="galeria.html" class="btn btn-secundario">Ver a galeria</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-grade">
+            <div>
+                <p class="rodape-titulo">Nutrir+</p>
+                <p>Plataforma de Sustentabilidade, Empregabilidade e Impacto Social.</p>
+                <ul class="redes">
+                    <li><a href="#" aria-label="Instagram da Nutrir+"><ion-icon name="logo-instagram" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="Facebook da Nutrir+"><ion-icon name="logo-facebook" aria-hidden="true"></ion-icon></a></li>
+                    <li><a href="#" aria-label="YouTube da Nutrir+"><ion-icon name="logo-youtube" aria-hidden="true"></ion-icon></a></li>
+                </ul>
+            </div>
+
+            <nav aria-label="Rodapé">
+                <p class="rodape-titulo">Navegue</p>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="Mais páginas">
+                <p class="rodape-titulo">Conteúdo</p>
+                <ul>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="midia.html">Mídia</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <p class="rodape-copy">&copy; <span id="ano">2026</span> Nutrir+. Projeto acadêmico, Fatec São Caetano do Sul. CNPJ fictício 00.000.000/0001-00. <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+    <div class="cookies" id="cookies" role="dialog" aria-labelledby="cookies-texto" hidden>
+        <p id="cookies-texto">Usamos cookies para melhorar sua experiência e entender como o site é usado, em conformidade com a LGPD.</p>
+        <button type="button" class="btn btn-principal" id="cookiesAceitar">Aceitar e fechar</button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
