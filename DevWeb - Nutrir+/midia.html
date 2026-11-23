@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A Nutrir+ na mídia: reportagens, entrevistas, vídeos e kit de imprensa com textos oficiais, números e identidade visual.">
-    <title>Mídia | Nutrir+</title>
+    <title>Mídia: reportagens, vídeos e kit de imprensa | Nutrir+</title>
     <link rel="stylesheet" href="./style_css/midia.css">
     <script src="./javs_js/index.js" defer></script>
     <script src="./javs_js/acessibilidade.js" defer></script>
@@ -15,8 +15,8 @@
 
     <header class="cabecalho">
         <div class="cabecalho-interno">
-            <a href="index.html" class="logo-container" aria-label="EcoVocação, página inicial">
-                <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <a href="index.html" class="logo-container" aria-label="Nutrir+, página inicial">
+                <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
                     <circle cx="24" cy="24" r="22" fill="#2E7D4F"/>
                     <path d="M14 30c0-9 6-15 18-16-1 11-7 17-16 17-1 0-2 0-2-1z" fill="#F4A340"/>
                     <path d="M14 33c5-6 9-9 15-12" stroke="#FBF6EC" stroke-width="2" fill="none" stroke-linecap="round"/>
@@ -31,11 +31,11 @@
 
             <nav class="menu" id="menuPrincipal" aria-label="Principal">
                 <ul class="links">
-                    <li><a href="#quem-somos">Quem somos</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#impacto">Impacto</a></li>
-                    <li><a href="#noticias">Notícias</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="sobre.html">Quem somos</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
 
                 <form class="busca" id="busca" role="search">
@@ -47,8 +47,8 @@
                 </form>
 
                 <div class="identificacao">
-                    <a href="#contato" class="btn-menu btn-menu-contorno">Preciso de ajuda</a>
-                    <a href="#doe" class="btn-menu btn-menu-cheio">Doe agora</a>
+                    <a href="contato.html#fale" class="btn-menu btn-menu-contorno">Preciso de ajuda</a>
+                    <a href="contato.html#doar" class="btn-menu btn-menu-cheio">Doe agora</a>
                 </div>
             </nav>
         </div>
@@ -56,10 +56,10 @@
 
     <main id="conteudo">
 
-        <div class="titulo-pagina">
+        <header class="titulo-pagina">
             <h1>Mídia</h1>
             <p>Reportagens, entrevistas, vídeos e um kit de imprensa para quem quer contar a história da Nutrir+.</p>
-        </div>
+        </header>
 
         <section class="secao imprensa" id="imprensa" aria-labelledby="titulo-imprensa">
             <div class="secao-cabecalho">
@@ -109,30 +109,64 @@
 
             <div class="videos-grade">
                 <article class="video">
-                    <video src="./img/cozinhasolidaria.mp4" controls poster="imagens/video1-poster.jpg" aria-label="Vídeo: Um dia na Cozinha Solidária, 3 minutos e 20 segundos">
-                        <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
-                        <span class="duracao">3:20</span>
+                    <video controls preload="metadata" playsinline poster="imagens/video1-poster.jpg" aria-label="Vídeo: Um dia na Cozinha Solidária, duração 3 minutos e 20 segundos">
+                        <source src="./img/cozinhasolidaria.mp4" type="video/mp4">
+                        <p>Seu navegador não reproduz vídeos. <a href="./img/cozinhasolidaria.mp4">Baixe o vídeo "Um dia na Cozinha Solidária"</a>.</p>
                     </video>
                     <h3>Um dia na Cozinha Solidária</h3>
-                    <p>Do recebimento dos alimentos ao prato servido.</p>
+                    <p>Do recebimento dos alimentos ao prato servido. Duração: 3 min 20 s.</p>
                 </article>
                 <article class="video">
-                    <a href="#" class="video-capa fundo-laranja" aria-label="Assistir: Da panificação ao primeiro emprego, 4 minutos e 5 segundos">
-                        <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
-                        <span class="duracao">4:05</span>
-                    </a>
+                    <video controls preload="metadata" playsinline poster="imagens/video2-poster.jpg" aria-label="Vídeo: Da panificação ao primeiro emprego, duração 4 minutos e 5 segundos">
+                        <source src="./img/panificacao.mp4" type="video/mp4">
+                        <p>Seu navegador não reproduz vídeos. <a href="./img/panificacao.mp4">Baixe o vídeo "Da panificação ao primeiro emprego"</a>.</p>
+                    </video>
                     <h3>Da panificação ao primeiro emprego</h3>
-                    <p>A história da primeira turma contratada por empresas parceiras.</p>
+                    <p>A história da primeira turma contratada por empresas parceiras. Duração: 4 min 5 s.</p>
                 </article>
                 <article class="video">
-                    <video src="./img/hortacom.mp4" controls poster="imagens/video3-poster.jpg" aria-label="Vídeo: Como funciona a Horta Comunitária, 2 minutos e 40 segundos">
-                        <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
-                        <span class="duracao">2:40</span>
+                    <video controls preload="metadata" playsinline poster="imagens/video3-poster.jpg" aria-label="Vídeo: Como funciona a Horta Comunitária, duração 2 minutos e 40 segundos">
+                        <source src="./img/hortacom.mp4" type="video/mp4">
+                        <p>Seu navegador não reproduz vídeos. <a href="./img/hortacom.mp4">Baixe o vídeo "Como funciona a Horta Comunitária"</a>.</p>
                     </video>
                     <h3>Como funciona a Horta Comunitária</h3>
-                    <p>Cultivo coletivo, compostagem e educação ambiental.</p>
+                    <p>Cultivo coletivo, compostagem e educação ambiental. Duração: 2 min 40 s.</p>
                 </article>
             </div>
+        </section>
+
+        <section class="secao audio" id="audio" aria-labelledby="titulo-audio">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Áudio</span>
+                <h2 id="titulo-audio">Ouça a <span>entrevista</span></h2>
+                <p>A coordenação geral da Nutrir+ conta como a ONG une alimento, capacitação e emprego.</p>
+            </div>
+
+            <article class="audio-bloco">
+                <h3>Entrevista à Rádio Comunidade FM</h3>
+                <p class="fonte">Rádio Comunidade FM · <time datetime="2026-08-27">27 de agosto de 2026</time> · Duração: 5 min</p>
+                <audio controls preload="none" aria-label="Áudio: entrevista da coordenação geral à Rádio Comunidade FM">
+                    <source src="./audio/entrevista.mp3" type="audio/mpeg">
+                    <p>Seu navegador não reproduz áudio. <a href="./audio/entrevista.mp3">Baixe a entrevista em MP3</a>.</p>
+                </audio>
+                <details class="resumo-texto">
+                    <summary>Ler resumo em texto</summary>
+                    <p>A coordenação geral explica que o alimento é o primeiro passo do trabalho da Nutrir+ e que a capacitação e o emprego vêm em seguida, unindo combate à fome, reaproveitamento de alimentos e inclusão de pessoas com deficiência.</p>
+                </details>
+            </article>
+        </section>
+
+        <section class="secao mapa" id="onde-estamos" aria-labelledby="titulo-mapa">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Onde estamos</span>
+                <h2 id="titulo-mapa">Visite a <span>Nutrir+</span></h2>
+                <p>Rua das Flores, 100, São Caetano do Sul, SP. Atendimento de segunda a sexta, das 9h às 17h.</p>
+            </div>
+
+            <div class="mapa-moldura">
+                <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-46.5648%2C-23.6279%2C-46.5448%2C-23.6179&amp;layer=mapnik&amp;marker=-23.6229%2C-46.5548" title="Mapa da região de São Caetano do Sul, SP" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="nota">Endereço fictício, criado para este projeto acadêmico. O mapa mostra apenas a região da cidade. <a href="https://www.openstreetmap.org/?mlat=-23.6229&amp;mlon=-46.5548#map=15/-23.6229/-46.5548" target="_blank" rel="noopener noreferrer">Abrir mapa maior (abre em nova aba)</a></p>
         </section>
 
         <section class="secao kit" id="kit-imprensa" aria-labelledby="titulo-kit">
@@ -180,7 +214,7 @@
                 <article class="kit-bloco">
                     <h3>Logo</h3>
                     <div class="logo-previa">
-                        <svg viewBox="0 0 48 48" width="64" height="64" role="img" aria-label="Logo da Nutrir+: folha laranja sobre círculo verde" focusable="false">
+                        <svg viewBox="0 0 48 48" width="64" height="64" role="img" aria-label="Logo da Nutrir+: folha laranja sobre círculo verde">
                             <circle cx="24" cy="24" r="22" fill="#2E7D4F"/>
                             <path d="M14 30c0-9 6-15 18-16-1 11-7 17-16 17-1 0-2 0-2-1z" fill="#F4A340"/>
                             <path d="M14 33c5-6 9-9 15-12" stroke="#FBF6EC" stroke-width="2" fill="none" stroke-linecap="round"/>
@@ -240,7 +274,7 @@
                 <p class="rodape-titulo">Conteúdo</p>
                 <ul>
                     <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="midia.html">Mídia</a></li>
+                    <li><a href="midia.html" aria-current="page">Mídia</a></li>
                     <li><a href="noticias.html">Notícias</a></li>
                     <li><a href="contato.html">Contato</a></li>
                     <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
