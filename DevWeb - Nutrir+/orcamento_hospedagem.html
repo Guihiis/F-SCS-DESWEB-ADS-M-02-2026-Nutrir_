@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Orçamento de hospedagem do site da Nutrir+: requisitos, comparativo de opções, custos de domínio e hospedagem e calculadora de estimativa.">
+    <meta name="description" content="Relatório comparativo de hospedagem e domínio do projeto Nutrir+, com custos, recursos e justificativa da escolha.">
+    <meta name="theme-color" content="#12372A">
     <title>Orçamento de hospedagem | Nutrir+</title>
     <link rel="stylesheet" href="./style_css/orcamento.css">
     <script src="./javs_js/index.js" defer></script>
     <script src="./javs_js/acessibilidade.js" defer></script>
-    <script src="./javs_js/orcamento.js" defer></script>
 </head>
 <body>
     <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
 
     <header class="cabecalho">
         <div class="cabecalho-interno">
-            <a href="index.html" class="logo-container" aria-label="EcoVocação, página inicial">
+            <a href="index.html" class="logo-container" aria-label="Nutrir+, página inicial">
                 <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
                     <circle cx="24" cy="24" r="22" fill="#2E7D4F"/>
                     <path d="M14 30c0-9 6-15 18-16-1 11-7 17-16 17-1 0-2 0-2-1z" fill="#F4A340"/>
@@ -31,11 +31,11 @@
 
             <nav class="menu" id="menuPrincipal" aria-label="Principal">
                 <ul class="links">
-                    <li><a href="#quem-somos">Quem somos</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#impacto">Impacto</a></li>
-                    <li><a href="#noticias">Notícias</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="sobre.html">Quem somos</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
 
                 <form class="busca" id="busca" role="search">
@@ -47,238 +47,195 @@
                 </form>
 
                 <div class="identificacao">
-                    <a href="#contato" class="btn-menu btn-menu-contorno">Preciso de ajuda</a>
-                    <a href="#doe" class="btn-menu btn-menu-cheio">Doe agora</a>
+                    <a href="contato.html" class="btn-menu btn-menu-contorno">Preciso de ajuda</a>
+                    <a href="contato.html#doar" class="btn-menu btn-menu-cheio">Doe agora</a>
                 </div>
             </nav>
         </div>
     </header>
 
     <main id="conteudo">
-
-        <div class="titulo-pagina">
+        <section class="titulo-pagina">
+            <span class="rotulo">Planejamento e transparência</span>
             <h1>Orçamento de hospedagem</h1>
-            <p>Quanto custa manter o site da Nutrir+ no ar? Veja o que o site precisa, compare as opções e monte sua própria estimativa.</p>
-        </div>
+            <p>Uma comparação de custos e recursos para manter o Nutrir+ disponível na internet, com segurança e espaço para crescer.</p>
+            <a class="btn btn-principal" href="#comparativo">Ver comparativo</a>
+        </section>
 
-        <section class="secao requisitos" id="requisitos" aria-labelledby="titulo-requisitos">
+        <section class="secao" aria-labelledby="titulo-necessidades">
             <div class="secao-cabecalho">
-                <span class="rotulo">Ponto de partida</span>
-                <h2 id="titulo-requisitos">O que o site <span>precisa</span></h2>
-                <p>Estes itens definem o tipo de hospedagem e o valor do orçamento.</p>
+                <span class="rotulo">01 — Necessidades do projeto</span>
+                <h2 id="titulo-necessidades">O que o Nutrir+ <span>precisa?</span></h2>
+                <p>O projeto é composto principalmente por páginas HTML5, folhas de estilo CSS3, imagens e alguns recursos de JavaScript. Por isso, não exige uma infraestrutura complexa de servidor.</p>
             </div>
 
-            <ul class="requisitos-grade">
-                <li class="requisito">
-                    <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon>
-                    <h3>Site estático</h3>
-                    <p>Páginas em HTML, CSS e JavaScript, sem banco de dados. Isso permite opções bem baratas ou gratuitas.</p>
-                </li>
-                <li class="requisito">
-                    <ion-icon name="globe-outline" aria-hidden="true"></ion-icon>
+            <div class="necessidades-grade">
+                <article class="necessidade">
+                    <span class="icone" aria-hidden="true"><ion-icon name="code-slash-outline"></ion-icon></span>
+                    <h3>Site institucional</h3>
+                    <p>Dez páginas interligadas, com conteúdo, imagens, formulário e materiais multimídia.</p>
+                </article>
+                <article class="necessidade">
+                    <span class="icone" aria-hidden="true"><ion-icon name="globe-outline"></ion-icon></span>
                     <h3>Domínio próprio</h3>
-                    <p>Um endereço fácil de lembrar. Domínios .br custam R$ 40 por ano no Registro.br.</p>
-                </li>
-                <li class="requisito">
-                    <ion-icon name="lock-closed-outline" aria-hidden="true"></ion-icon>
-                    <h3>HTTPS (SSL)</h3>
-                    <p>Conexão segura, essencial para o formulário de contato e para a proteção de dados da LGPD.</p>
-                </li>
-                <li class="requisito">
-                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-                    <h3>E-mail de contato</h3>
-                    <p>Um endereço com o nome da ONG passa mais confiança a doadores e parceiros.</p>
-                </li>
-                <li class="requisito">
-                    <ion-icon name="save-outline" aria-hidden="true"></ion-icon>
-                    <h3>Backup</h3>
-                    <p>Cópias de segurança para recuperar o site rapidamente em caso de erro ou ataque.</p>
-                </li>
-                <li class="requisito">
-                    <ion-icon name="trending-up-outline" aria-hidden="true"></ion-icon>
-                    <h3>Espaço para crescer</h3>
-                    <p>Mais páginas, galeria de fotos e campanhas de doação podem aumentar o tráfego com o tempo.</p>
-                </li>
+                    <p>Um endereço curto e fácil de memorizar para facilitar o acesso ao projeto.</p>
+                </article>
+                <article class="necessidade">
+                    <span class="icone" aria-hidden="true"><ion-icon name="shield-checkmark-outline"></ion-icon></span>
+                    <h3>HTTPS</h3>
+                    <p>Conexão criptografada para proteger a navegação dos visitantes.</p>
+                </article>
+                <article class="necessidade">
+                    <span class="icone" aria-hidden="true"><ion-icon name="phone-portrait-outline"></ion-icon></span>
+                    <h3>Responsividade</h3>
+                    <p>Funcionamento adequado em celulares, tablets e computadores.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="faixa-clara" id="comparativo">
+            <div class="secao">
+                <div class="secao-cabecalho">
+                    <span class="rotulo">02 — Comparativo de hospedagem</span>
+                    <h2>Três opções <span>analisadas</span></h2>
+                    <p>Os planos abaixo foram selecionados por atenderem a projetos web e permitirem comparar custo, facilidade de publicação e possibilidade de crescimento.</p>
+                </div>
+
+                <div class="tabela-rolagem">
+                    <table>
+                        <caption>Comparação entre Railway, Render e Hostinger</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Plataforma / plano</th>
+                                <th scope="col">Preço anunciado</th>
+                                <th scope="col">Recursos relevantes</th>
+                                <th scope="col">Pontos de atenção</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <span class="nome-plataforma">Railway — Hobby</span>
+                                    <span class="tag tag-escolha">Hospedagem utilizada</span>
+                                </th>
+                                <td><strong>US$ 5/mês</strong><br><small>mínimo mensal, convertido conforme câmbio e cobrança</small></td>
+                                <td>Deploy integrado ao repositório, domínio personalizado, HTTPS e cobrança baseada no uso de recursos. O plano inclui US$ 5 em créditos de uso.</td>
+                                <td>O valor final pode aumentar se o consumo ultrapassar os créditos incluídos. A cobrança é em dólar.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="nome-plataforma">Render — Static Sites</span>
+                                    <span class="tag">Alternativa gratuita</span>
+                                </th>
+                                <td><strong>US$ 0/mês</strong></td>
+                                <td>Hospedagem de sites estáticos, publicação automática a partir do Git, CDN, domínio personalizado e TLS gerenciado.</td>
+                                <td>É indicado para HTML, CSS e JavaScript estático. Recursos de servidor e banco de dados têm cobrança separada.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="nome-plataforma">Hostinger — Single</span>
+                                    <span class="tag">Alternativa paga</span>
+                                </th>
+                                <td><strong>R$ 5,99/mês</strong><br><small>promoção em contrato de 48 meses: R$ 287,52 pagos no período; renovação anunciada por R$ 23,99/mês</small></td>
+                                <td>Hospedagem compartilhada, 1 site, 10 GB SSD, SSL e domínio grátis conforme condições do plano.</td>
+                                <td>O preço promocional exige contratação longa e o valor de renovação é maior. Verificar as condições comerciais no momento da compra.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="nota">Valores consultados em 23/11/2026 nas páginas oficiais. Railway e Render exibem preços em dólar; o custo em reais depende do câmbio, impostos e forma de pagamento. O preço promocional da Hostinger depende do prazo contratado.</p>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-dominios">
+            <div class="secao-cabecalho">
+                <span class="rotulo">03 — Comparativo de domínio</span>
+                <h2>Qual endereço combina com o <span>projeto?</span></h2>
+                <p>O Registro.br informa o valor de R$ 40,00 por ano para registro de domínios .br. A extensão deve representar corretamente a finalidade do site.</p>
+            </div>
+
+            <div class="dominios-grade">
+                <article class="dominio-card recomendado">
+                    <span class="dominio-extensao">.com.br</span>
+                    <h3>Nutrir+ com presença brasileira</h3>
+                    <p>Extensão conhecida e adequada para uma iniciativa com atuação e público no Brasil.</p>
+                    <strong class="preco-dominio">R$ 40,00 <small>/ ano</small></strong>
+                    <span class="tag tag-escolha">Recomendado</span>
+                </article>
+
+                <article class="dominio-card">
+                    <span class="dominio-extensao">.eco.br</span>
+                    <h3>Ênfase ambiental</h3>
+                    <p>Categoria relacionada a atividades com foco ecológico e ambiental, conectada ao tema de sustentabilidade.</p>
+                    <strong class="preco-dominio">R$ 40,00 <small>/ ano</small></strong>
+                    <span class="tag">Alternativa temática</span>
+                </article>
+
+                <article class="dominio-card">
+                    <span class="dominio-extensao">.net.br</span>
+                    <h3>Alternativa de uso geral</h3>
+                    <p>Categoria associada a atividades comerciais e serviços de rede, caso a equipe prefira essa identificação.</p>
+                    <strong class="preco-dominio">R$ 40,00 <small>/ ano</small></strong>
+                    <span class="tag">Alternativa</span>
+                </article>
+            </div>
+
+            <p class="nota">O preço é o valor de registro informado pelo Registro.br para domínios .br. A disponibilidade do nome desejado precisa ser consultada antes do registro. Algumas categorias podem ter regras específicas.</p>
+        </section>
+
+        <section class="faixa-verde" aria-labelledby="titulo-escolha">
+            <div class="secao escolha-grade">
+                <div>
+                    <span class="rotulo">04 — Decisão da equipe</span>
+                    <h2 id="titulo-escolha">Por que manter o <span>Railway?</span></h2>
+                    <p>O Railway foi escolhido porque já é a plataforma utilizada para publicar o Nutrir+. A equipe já configurou o projeto e o domínio, então continuar nessa plataforma evita migração, retrabalho e novas etapas técnicas na conclusão da atividade.</p>
+                    <ul class="lista-vantagens">
+                        <li>Integração com o repositório e publicação do projeto.</li>
+                        <li>Domínio personalizado e HTTPS.</li>
+                        <li>Possibilidade de acompanhar o consumo dos recursos.</li>
+                        <li>Continuidade da configuração já realizada pela equipe.</li>
+                    </ul>
+                </div>
+                <aside class="resumo-escolha">
+                    <span class="resumo-selo">Escolha do projeto</span>
+                    <strong>Railway</strong>
+                    <span>Plano Hobby</span>
+                    <div class="linha-resumo"></div>
+                    <strong class="resumo-preco">US$ 5/mês</strong>
+                    <small>valor mínimo do plano, sujeito ao consumo de recursos</small>
+                </aside>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-conclusao">
+            <div class="conclusao">
+                <span class="rotulo">05 — Conclusão</span>
+                <h2 id="titulo-conclusao">Investir com <span>responsabilidade</span></h2>
+                <p>Para a entrega acadêmica, o mais importante é manter as dez páginas acessíveis, com HTTPS e navegação funcionando. Como o Nutrir+ já está publicado no Railway, a decisão mais prática é continuar utilizando a plataforma e acompanhar o consumo mensal. Para o domínio, a extensão .com.br é a opção mais direta para apresentar o projeto ao público brasileiro.</p>
+                <p>Se o site crescer e passar a exigir novas funções, como banco de dados ou sistema próprio de doações, a equipe poderá reavaliar a infraestrutura e os custos.</p>
+            </div>
+        </section>
+
+        <section class="secao fontes" aria-labelledby="titulo-fontes">
+            <div class="secao-cabecalho">
+                <span class="rotulo">Referências consultadas</span>
+                <h2 id="titulo-fontes">Fontes dos <span>valores</span></h2>
+                <p>Consulta realizada em 23 de novembro de 2026. Os preços podem mudar; esta página registra as condições encontradas na data da pesquisa.</p>
+            </div>
+            <ul class="fontes-lista">
+                <li><a href="https://docs.railway.com/pricing/plans" target="_blank" rel="noopener noreferrer">Railway — planos e preços oficiais</a></li>
+                <li><a href="https://render.com/pricing" target="_blank" rel="noopener noreferrer">Render — tabela oficial de preços</a></li>
+                <li><a href="https://www.hostinger.com/br/hospedagem-de-sites" target="_blank" rel="noopener noreferrer">Hostinger Brasil — planos de hospedagem</a></li>
+                <li><a href="https://registro.br/dominio" target="_blank" rel="noopener noreferrer">Registro.br — preços e informações sobre domínios</a></li>
+                <li><a href="https://registro.br/dominio/categorias/" target="_blank" rel="noopener noreferrer">Registro.br — categorias de domínios .br</a></li>
             </ul>
         </section>
 
-        <section class="secao opcoes-secao" id="opcoes" aria-labelledby="titulo-opcoes">
-            <div class="secao-cabecalho">
-                <span class="rotulo">Comparativo</span>
-                <h2 id="titulo-opcoes">Três caminhos <span>possíveis</span></h2>
-                <p>Do custo zero ao servidor próprio: cada opção atende uma fase do projeto.</p>
-            </div>
-
-            <div class="planos">
-                <article class="plano">
-                    <h3>Hospedagem estática gratuita</h3>
-                    <p class="preco"><strong>R$ 0</strong> <span>/mês</span></p>
-                    <p class="indicado">Ideal para projeto acadêmico e demonstração.</p>
-                    <ul class="lista-plano">
-                        <li class="pro">Sem custo de hospedagem</li>
-                        <li class="pro">HTTPS incluso, publicação simples</li>
-                        <li class="contra">Sem e-mail próprio nem back-end</li>
-                        <li class="contra">Domínio próprio é opcional e pago à parte</li>
-                    </ul>
-                    <p class="exemplos">Exemplos: GitHub Pages, Netlify e Cloudflare Pages. Confira as condições de uso gratuito de cada um.</p>
-                </article>
-
-                <article class="plano destaque">
-                    <span class="selo-plano">Indicado para a ONG real</span>
-                    <h3>Hospedagem compartilhada</h3>
-                    <p class="preco"><strong>≈ R$ 10</strong> <span>/mês</span></p>
-                    <p class="indicado">Faixa de referência: de R$ 6 a R$ 20 por mês no plano anual.</p>
-                    <ul class="lista-plano">
-                        <li class="pro">Painel de controle, e-mail e SSL</li>
-                        <li class="pro">Suporte em português e backup</li>
-                        <li class="contra">Valor promocional no 1º ano; a renovação costuma ser maior</li>
-                        <li class="contra">Desempenho pode oscilar em horários de pico</li>
-                    </ul>
-                    <p class="exemplos">Oferecida por provedores como Hostinger, HostGator, Locaweb e KingHost.</p>
-                </article>
-
-                <article class="plano">
-                    <h3>Cloud ou VPS</h3>
-                    <p class="preco"><strong>≈ R$ 60</strong> <span>/mês</span></p>
-                    <p class="indicado">Estimativa. Os valores variam bastante por configuração.</p>
-                    <ul class="lista-plano">
-                        <li class="pro">Mais desempenho e controle do servidor</li>
-                        <li class="pro">Pronto para campanhas de alto tráfego</li>
-                        <li class="contra">Custo bem maior</li>
-                        <li class="contra">Exige conhecimento técnico para manter</li>
-                    </ul>
-                    <p class="exemplos">Só compensa se o site passar a ter sistema de doações próprio ou muitos acessos.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="secao calculadora" id="calculadora" aria-labelledby="titulo-calculadora">
-            <div class="secao-cabecalho">
-                <span class="rotulo">Monte o seu</span>
-                <h2 id="titulo-calculadora">Calculadora de <span>orçamento</span></h2>
-                <p>Escolha o plano e o período. Os valores podem ser editados conforme a cotação que você receber.</p>
-            </div>
-
-            <div class="calc-grade">
-                <form class="calc-form" id="formOrcamento" novalidate>
-                    <div class="campo">
-                        <label for="plano">Tipo de hospedagem</label>
-                        <select id="plano" name="plano">
-                            <option value="0">Estática gratuita</option>
-                            <option value="9.99" selected>Compartilhada</option>
-                            <option value="59.90">Cloud ou VPS</option>
-                        </select>
-                    </div>
-
-                    <div class="campo">
-                        <label for="mensal">Valor da hospedagem (R$ por mês)</label>
-                        <input type="number" id="mensal" name="mensal" min="0" step="0.01" value="9.99" inputmode="decimal">
-                    </div>
-
-                    <div class="campo">
-                        <label for="periodo">Período de contratação</label>
-                        <select id="periodo" name="periodo">
-                            <option value="12" selected>12 meses</option>
-                            <option value="24">24 meses</option>
-                            <option value="36">36 meses</option>
-                        </select>
-                    </div>
-
-                    <div class="campo campo-check">
-                        <input type="checkbox" id="dominio" name="dominio" checked>
-                        <label for="dominio">Incluir domínio .br (R$ 40 por ano)</label>
-                    </div>
-
-                    <div class="campo">
-                        <label for="extras">Extras (R$ por mês)</label>
-                        <input type="number" id="extras" name="extras" min="0" step="0.01" value="0" inputmode="decimal" aria-describedby="ajuda-extras">
-                        <span class="ajuda" id="ajuda-extras">Ex.: backup adicional ou e-mail profissional pago.</span>
-                    </div>
-
-                    <div class="campo-duplo">
-                        <div class="campo">
-                            <label for="horas">Manutenção (horas por mês)</label>
-                            <input type="number" id="horas" name="horas" min="0" step="0.5" value="0" inputmode="decimal">
-                        </div>
-                        <div class="campo">
-                            <label for="valorHora">Valor da hora (R$)</label>
-                            <input type="number" id="valorHora" name="valorHora" min="0" step="0.01" value="0" inputmode="decimal">
-                        </div>
-                    </div>
-
-                    <button type="reset" class="btn btn-secundario" id="limpar">Restaurar valores</button>
-                </form>
-
-                <div class="resultado" aria-labelledby="titulo-resultado">
-                    <h3 id="titulo-resultado">Resumo do orçamento</h3>
-
-                    <div class="tabela-rolagem">
-                        <table class="tabela">
-                            <caption class="sr-only">Composição do custo total do orçamento</caption>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Item</th>
-                                    <th scope="col">Cálculo</th>
-                                    <th scope="col" class="num">Valor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><th scope="row">Hospedagem</th><td id="calc-hosp">–</td><td class="num" id="val-hosp">–</td></tr>
-                                <tr><th scope="row">Domínio .br</th><td id="calc-dom">–</td><td class="num" id="val-dom">–</td></tr>
-                                <tr><th scope="row">Extras</th><td id="calc-ext">–</td><td class="num" id="val-ext">–</td></tr>
-                                <tr><th scope="row">Manutenção</th><td id="calc-man">–</td><td class="num" id="val-man">–</td></tr>
-                            </tbody>
-                            <tfoot>
-                                <tr><th scope="row" colspan="2">Total no período</th><td class="num" id="val-total">–</td></tr>
-                            </tfoot>
-                        </table>
-                    </div>
-
-                    <div class="destaques" role="status" aria-live="polite">
-                        <p><span>Média por mês</span><strong id="val-mes">–</strong></p>
-                        <p><span>Média por ano</span><strong id="val-ano">–</strong></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="secao recomendacao" id="recomendacao" aria-labelledby="titulo-recomendacao">
-            <div class="recomendacao-grade">
-                <div>
-                    <span class="rotulo">Recomendação</span>
-                    <h2 id="titulo-recomendacao">Qual escolher <span>agora?</span></h2>
-                </div>
-                <ul class="recomendacao-lista">
-                    <li><strong>Projeto acadêmico:</strong> hospedagem estática gratuita. O custo fica em R$ 0, e o domínio .br (R$ 40 por ano) só entra se o grupo quiser um endereço próprio.</li>
-                    <li><strong>ONG em funcionamento:</strong> hospedagem compartilhada anual com domínio .org.br, que exige o CNPJ da entidade. O custo fica em torno de R$ 160 por ano com os valores de referência.</li>
-                    <li><strong>Futuro:</strong> migrar para cloud ou VPS apenas se houver sistema de doações próprio ou aumento forte de acessos.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="secao avisos" id="avisos" aria-labelledby="titulo-avisos">
-            <h2 id="titulo-avisos" class="sr-only">Avisos sobre os valores</h2>
-            <div class="aviso">
-                <ion-icon name="information-circle-outline" aria-hidden="true"></ion-icon>
-                <div>
-                    <h3>Sobre os valores</h3>
-                    <p>
-                        Os valores são referências pesquisadas em novembro de 2026 e mudam com frequência. O preço de domínio
-                        .br no Registro.br (R$ 40 por ano) é o oficial. Os de hospedagem costumam ser promocionais no primeiro ano
-                        e exigem contrato anual ou mais longo; o valor de cloud ou VPS é apenas uma estimativa. Confirme o preço atual
-                        e o valor da renovação no site de cada provedor antes de contratar.
-                    </p>
-                </div>
-            </div>
-            <p class="nota">Orçamento ilustrativo, criado para este projeto acadêmico.</p>
-        </section>
-
-        <section class="doe" id="ajuda" aria-labelledby="titulo-ajuda">
-            <div class="secao-cabecalho">
-                <h2 id="titulo-ajuda">Quer apoiar a <span>hospedagem?</span></h2>
-                <p>Empresas parceiras podem ajudar a manter o site da Nutrir+ no ar. Fale com a gente.</p>
-            </div>
-            <div class="doe-acao">
+        <section class="chamada">
+            <div class="secao chamada-conteudo">
+                <h2>Quer conhecer mais sobre o Nutrir+?</h2>
+                <p>Entre em contato com a equipe e conheça nossas iniciativas de sustentabilidade e impacto social.</p>
                 <a href="contato.html" class="btn btn-principal">Falar com a equipe</a>
             </div>
         </section>
@@ -314,18 +271,13 @@
                     <li><a href="midia.html">Mídia</a></li>
                     <li><a href="noticias.html">Notícias</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                    <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+                    <li><a href="orcamento_hospedagem.html" aria-current="page">Orçamento de hospedagem</a></li>
                 </ul>
             </nav>
         </div>
 
-        <p class="rodape-copy">&copy; <span id="ano">2026</span> Nutrir+. Projeto acadêmico, Fatec São Caetano do Sul. CNPJ fictício 00.000.000/0001-00. <a href="#">Política de Privacidade</a></p>
+        <p class="rodape-copy">&copy; 2026 Nutrir+. Projeto acadêmico, Fatec São Caetano do Sul. CNPJ fictício 00.000.000/0001-00. <a href="#">Política de Privacidade</a></p>
     </footer>
-
-    <div class="cookies" id="cookies" role="dialog" aria-labelledby="cookies-texto" hidden>
-        <p id="cookies-texto">Usamos cookies para melhorar sua experiência e entender como o site é usado, em conformidade com a LGPD.</p>
-        <button type="button" class="btn btn-principal" id="cookiesAceitar">Aceitar e fechar</button>
-    </div>
 
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
